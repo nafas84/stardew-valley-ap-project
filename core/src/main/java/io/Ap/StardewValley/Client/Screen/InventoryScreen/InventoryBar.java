@@ -53,8 +53,6 @@ public class InventoryBar extends Stage {
         scrollPane.setStyle(style);
 
         // add to page:
-        root.add(scrollPane);
-
         root.pad(0);
         root.defaults().pad(0);
 
