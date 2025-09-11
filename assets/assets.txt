@@ -57,6 +57,7 @@ inventory/1 levels.png
 inventory/2 levels.png
 inventory/3 levels.png
 inventory/4 levels.png
+inventory/Skill/inventory button 4.png
 inventory/Skill/skill farming icon.png
 inventory/Skill/skill fishing icon.png
 inventory/Skill/skill foraging icon.png
