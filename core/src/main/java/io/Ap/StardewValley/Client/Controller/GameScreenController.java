@@ -1,7 +1,6 @@
 package io.Ap.StardewValley.Client.Controller;
 
 import com.badlogic.gdx.Gdx;
-import io.Ap.StardewValley.Client.Controller.NetworkControllers.UpdateController;
 import io.Ap.StardewValley.Client.Controller.SirkBozorg.*;
 import io.Ap.StardewValley.Common.Model.Plants.*;
 import io.Ap.StardewValley.Common.Model.Animals.AnimalProduct;
@@ -96,7 +95,7 @@ public class GameScreenController {
 
     public void goToNextDay() {
         view.setPaused(true);
-        view.showNightOverlay(() -> {
+        view.showGoodNightOverLayer(() -> {
             Season oldSeason = App.getGame().getCurrentTime().getSeason();
             NightController.nightControl();
             Season newSeason = App.getGame().getCurrentTime().getSeason();

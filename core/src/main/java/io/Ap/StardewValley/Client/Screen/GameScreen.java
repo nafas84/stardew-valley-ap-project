@@ -165,27 +165,20 @@ public class GameScreen implements Screen, InputProcessor {
 
 
         // add processors
-        InputMultiplexer multiplexer = new InputMultiplexer();
-        multiplexer.addProcessor(inventoryStage);
-        multiplexer.addProcessor(cookingStage);
-        multiplexer.addProcessor(blackSmithStage);
-        multiplexer.addProcessor(carpentersStage);
-        multiplexer.addProcessor(fishShopStage);
-        multiplexer.addProcessor(jojaMartStage);
-        multiplexer.addProcessor(marniesStage);
-        multiplexer.addProcessor(pierresStage);
-        multiplexer.addProcessor(stardropStage);
-        multiplexer.addProcessor(shippingBin);
-        multiplexer.addProcessor(stage);
-        multiplexer.addProcessor(this);
-        Gdx.input.setInputProcessor(multiplexer);
-//        Gdx.input.setInputProcessor(new InputMultiplexer(
-//                inventoryStage,
-//                cookingStage,
-//                blackSmithStage,
-//                stage,
-//                this
-//        ));
+        Gdx.input.setInputProcessor(new InputMultiplexer(
+                inventoryStage,
+                cookingStage,
+                blackSmithStage,
+                carpentersStage,
+                fishShopStage,
+                jojaMartStage,
+                marniesStage,
+                pierresStage,
+                stardropStage,
+                shippingBin,
+                stage,
+                this
+        ));
 
         // inventory bar:
         Stack inventoryStack = new Stack();
@@ -193,14 +186,18 @@ public class GameScreen implements Screen, InputProcessor {
         Table mainLayout = new Table();
         mainLayout.setFillParent(true);
         ScrollPane inventoryScrollPane = inventoryBar.getInventoryScrollPane();
-        mainLayout.add(inventoryScrollPane).width(130).height(800).pad(50, 40, 50, 0);
-        mainLayout.add().expand();
+        mainLayout.left();
+        mainLayout.add(inventoryScrollPane)
+                .width(150)
+                .height(800)
+                .pad(0)
+                .left();
         inventoryStack.add(mainLayout);
 
 
         // add to stackBar:
         stackBar.addActor(dialogTable);
-        stackBar.addActor(controllerTable);
+        //stackBar.addActor(controllerTable);
         stackBar.addActor(timeTable);
         stackBar.addActor(inventoryStack);
 
@@ -260,7 +257,7 @@ public class GameScreen implements Screen, InputProcessor {
             controller.updateTime(delta);
             updateNightOverlay();
 
-            updateControllerTable();
+            //updateControllerTable();
 
 
             // update weather:
@@ -383,7 +380,7 @@ public class GameScreen implements Screen, InputProcessor {
     }
 
 
-    public void showNightOverlay(Runnable onFinished) {
+    public void showGoodNightOverLayer(Runnable onFinished) {
         Stack overlay = new Stack();
         overlay.setFillParent(true);
 

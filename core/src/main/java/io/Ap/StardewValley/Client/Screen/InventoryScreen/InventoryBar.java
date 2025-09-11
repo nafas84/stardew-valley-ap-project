@@ -23,7 +23,6 @@ import java.util.List;
 import java.util.Map;
 
 public class InventoryBar extends Stage {
-
     private final Skin skin = StardewValley.getSkin();
     private final ScrollPane scrollPane;
     private final Table inventoryTable;
@@ -44,13 +43,23 @@ public class InventoryBar extends Stage {
 
         inventoryTable = new Table();
 
+        // set ScrollPane:
         scrollPane = new ScrollPane(inventoryTable, skin);
-//        scrollPane.setScrollingDisabled(true, false);
         scrollPane.setFadeScrollBars(false);
+        scrollPane.setScrollingDisabled(true, false);
+        scrollPane.setOverscroll(false, false);
 
-        root.add(scrollPane).width(140).expandY().left();
+        ScrollPane.ScrollPaneStyle style = new ScrollPane.ScrollPaneStyle();
+        scrollPane.setStyle(style);
+
+        // add to page:
+        root.add(scrollPane);
+
+        root.pad(0);
+        root.defaults().pad(0);
+
+
         this.addActor(root);
-
         initializeSlots();
         loadInitialItems();
     }
@@ -199,7 +208,6 @@ public class InventoryBar extends Stage {
             Item item = getSelectedItem(index);
             selectedItem = item;
             if (item instanceof Tool tool) {
-//                App.getGame().getCurrentPlayer().setCurrentTool(tool);
                 ToolController.equipThroughScreen(tool.getName());
             }
 
@@ -237,25 +245,20 @@ public class InventoryBar extends Stage {
 
     @Override
     public boolean scrolled(float amountX, float amountY) {
-        // موقعیت موس رو به stage محاسبه کن
         Vector2 mousePos = new Vector2(Gdx.input.getX(), Gdx.input.getY());
-        // تبدیل مختصات پنجره به مختصات local stage
         this.screenToStageCoordinates(mousePos);
 
         if (scrollPane.hit(mousePos.x, mousePos.y, true) != null) {
-            // اگر موس روی ScrollPane هست، اسکرول رو consume کن
-//            scrollPane.scrolled(amountX, amountY);
             return true;
         }
 
-        // در غیر این صورت رویداد رو consume نکن، بده به بقیه
         return false;
     }
 
     @Override
     public boolean touchDown(int screenX, int screenY, int pointer, int button) {
         boolean handled = super.touchDown(screenX, screenY, pointer, button);
-        return handled; // فقط اگه Stage خودش چیزی هندل کرد true میده
+        return handled;
     }
 
     @Override

@@ -47,6 +47,12 @@
 	"anishafaf": {
 		"hex": "ffa87bff"
 	},
+	"error": {
+		"hex": "ce1f25ff"
+	},
+	"error2": {
+		"hex": "ad1400ff"
+	},
 	"ordinaryText": {
 		"hex": "221122ff"
 	},
@@ -72,6 +78,23 @@
 		"hex": "ffffffff"
 	}
 },
+"ButtonStyle": {
+	"default": {
+		"up": "button",
+		"down": "button",
+		"over": "crossbutton",
+		"checked": "selectedbutton",
+		"pressedOffsetX": -2,
+		"pressedOffsetY": -2
+	},
+	"inventoryButton": {
+		"up": "darkinventorybutton",
+		"over": "inventorybutton",
+		"checked": "pressedinventorybutton",
+		"pressedOffsetX": -2,
+		"pressedOffsetY": -2
+	}
+},
 "CheckBoxStyle": {
 	"default": {
 		"checkboxOn": "selectCheckBox",
@@ -90,6 +113,53 @@
 		"imageDown": "selectedTas",
 		"imageOver": "selectedTas",
 		"pressedOffsetX": -1,
+		"pressedOffsetY": -2
+	},
+	"Left": {
+		"imageUp": "left",
+		"imageDown": "selectedLeft",
+		"imageOver": "selectedLeft",
+		"pressedOffsetX": -1,
+		"pressedOffsetY": -2
+	},
+	"Right": {
+		"imageUp": "right",
+		"imageDown": "selectedRight",
+		"imageOver": "selectedRight",
+		"pressedOffsetX": -1,
+		"pressedOffsetY": -2
+	},
+	"trash": {
+		"imageUp": "Garbage_Can_selected",
+		"imageDown": "Garbage_Can",
+		"imageOver": "Garbage_Can",
+		"pressedOffsetX": -2,
+		"pressedOffsetY": -2
+	},
+	"order": {
+		"imageUp": "orderButton",
+		"imageDown": "selectedOrderButton",
+		"imageOver": "selectedOrderButton",
+		"pressedOffsetX": -2,
+		"pressedOffsetY": -2
+	}
+},
+"ImageTextButtonStyle": {
+	"default": {
+		"font": "Text",
+		"up": "button",
+		"down": "button",
+		"over": "crossbutton",
+		"checked": "selectedbutton",
+		"pressedOffsetX": -2,
+		"pressedOffsetY": -2
+	},
+	"inventoryButton": {
+		"font": "Text",
+		"up": "darkinventorybutton",
+		"over": "inventorybutton",
+		"checked": "pressedinventorybutton",
+		"pressedOffsetX": -2,
 		"pressedOffsetY": -2
 	}
 },
@@ -133,6 +203,13 @@
 "ScrollPaneStyle": {
 	"default": {
 		"background": "selectListBoard",
+		"hScroll": "hScroll",
+		"hScrollKnob": "hScrollKnob",
+		"vScroll": "vScroll",
+		"vScrollKnob": "vScrollKnob"
+	},
+	"inventory": {
+		"background": "inventoryscrollpane",
 		"hScroll": "hScroll",
 		"hScrollKnob": "hScrollKnob",
 		"vScroll": "vScroll",
@@ -199,6 +276,23 @@
 		"over": "selectGolButton",
 		"pressedOffsetX": -2,
 		"pressedOffsetY": -3
+	},
+	"simple": {
+		"font": "Text",
+		"up": "button",
+		"down": "button",
+		"over": "crossbutton",
+		"checked": "selectedbutton",
+		"pressedOffsetX": -2,
+		"pressedOffsetY": -2
+	},
+	"inventory": {
+		"font": "Text",
+		"up": "darkinventorybutton",
+		"over": "inventorybutton",
+		"checked": "pressedinventorybutton",
+		"pressedOffsetX": -2,
+		"pressedOffsetY": -2
 	}
 },
 "TextFieldStyle": {
@@ -214,11 +308,33 @@
 		"label": "default",
 		"background": "backgroundPedding",
 		"wrapWidth": 250
+	},
+	"letter": {
+		"label": "default",
+		"background": "window2",
+		"wrapWidth": 250
+	},
+	"simple": {
+		"label": "default",
+		"background": "selectListBoard",
+		"wrapWidth": 250
 	}
 },
 "WindowStyle": {
 	"default": {
 		"background": "background",
+		"titleFont": "Bold"
+	},
+	"Letter": {
+		"background": "window2",
+		"titleFont": "Bold"
+	},
+	"inventory": {
+		"background": "inventorywindow",
+		"titleFont": "Bold"
+	},
+	"MiniGame": {
+		"background": "miniGame3",
 		"titleFont": "Bold"
 	}
 }
