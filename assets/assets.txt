@@ -52,98 +52,13 @@ etc/menu/nightbg.png
 etc/pixel.png
 etc/shadow.png
 etc/sherekVane.png
-inventory/0 hearts.png
 inventory/0 levels.png
-inventory/1 hearts.png
 inventory/1 levels.png
-inventory/10 hearts.png
-inventory/11 hearts.png
-inventory/12 hearts.png
-inventory/13 hearts.png
-inventory/14 hearts.png
-inventory/2 hearts.png
 inventory/2 levels.png
-inventory/3 hearts.png
 inventory/3 levels.png
-inventory/4 hearts.png
 inventory/4 levels.png
-inventory/5 hearts.png
-inventory/6 hearts.png
-inventory/7 hearts.png
-inventory/8 hearts.png
-inventory/9 hearts.png
-inventory/amaranth.png
-inventory/ancient fruit.png
-inventory/angler.png
-inventory/artichoke.png
-inventory/axe.png
-inventory/baked fish.png
-inventory/bamboo pole.png
-inventory/bee house.png
-inventory/beer.png
-inventory/beet.png
-inventory/big cow milk.png
-inventory/big egg.png
-inventory/blue discus.png
-inventory/blue jazz.png
-inventory/blueberry.png
-inventory/bok choy.png
-inventory/bomb.png
-inventory/bouquet.png
-inventory/bread.png
-inventory/broccoli.png
-inventory/carrot.png
-inventory/cauliflower.png
-inventory/charcoal kiln.png
-inventory/cheese press.png
-inventory/cherry bomb.png
-inventory/coffee bean.png
-inventory/coffee.png
-inventory/cookie.png
 inventory/cooking button 0.png
 inventory/cooking button 1.png
-inventory/copper axe.png
-inventory/copper hoe.png
-inventory/copper pickaxe.png
-inventory/copper watering can.png
-inventory/corn.png
-inventory/cow milk.png
-inventory/cranberries.png
-inventory/crimsonfish.png
-inventory/dehydrator.png
-inventory/deluxe retaining soil.png
-inventory/deluxe scarecrow.png
-inventory/dinosaur egg.png
-inventory/dish o' the sea.png
-inventory/dorado.png
-inventory/duck egg.png
-inventory/duck feather.png
-inventory/egg.png
-inventory/eggplant.png
-inventory/fairy rose.png
-inventory/farmer's lunch.png
-inventory/fiber.png
-inventory/fiberglass rod.png
-inventory/fish smoker.png
-inventory/flounder.png
-inventory/fried egg.png
-inventory/fruit salad.png
-inventory/furnace.png
-inventory/garlic.png
-inventory/ghostfish.png
-inventory/glacierfish.png
-inventory/gold axe.png
-inventory/gold hoe.png
-inventory/gold pickaxe.png
-inventory/gold watering can.png
-inventory/grape.png
-inventory/grass starter.png
-inventory/green bean.png
-inventory/hash browns.png
-inventory/herring.png
-inventory/hoe.png
-inventory/hops.png
-inventory/hot pepper.png
 inventory/inventory button 0.png
 inventory/inventory button 1.png
 inventory/inventory button 2.png
@@ -152,106 +67,149 @@ inventory/inventory button 4.png
 inventory/inventory button 5.png
 inventory/inventory button 7.png
 inventory/inventory button 8.png
-inventory/iridium axe.png
-inventory/iridium hoe.png
-inventory/iridium pickaxe.png
-inventory/iridium rod.png
-inventory/iridium sprinkler.png
-inventory/iridium watering can.png
-inventory/joja cola.png
-inventory/kale.png
-inventory/keg.png
-inventory/legend.png
-inventory/lionfish.png
-inventory/loom.png
-inventory/maki roll.png
-inventory/mayonnaise machine.png
-inventory/mega bomb.png
-inventory/melon.png
-inventory/midnight carp.png
-inventory/milk pail.png
-inventory/miner's treat.png
-inventory/mystic tree seed.png
-inventory/oil maker.png
-inventory/oil.png
-inventory/omelet.png
-inventory/pancakes.png
-inventory/parsnip.png
-inventory/perch.png
-inventory/pickaxe.png
-inventory/pizza.png
-inventory/poppy.png
-inventory/potato.png
-inventory/powdermelon.png
-inventory/preserves jar.png
-inventory/pumpkin pie.png
-inventory/pumpkin.png
-inventory/quality sprinkler.png
-inventory/rabbit foot.png
-inventory/rabbit fur.png
-inventory/radish.png
-inventory/rainbow trout.png
-inventory/red cabbage.png
-inventory/red plate.png
-inventory/rhubarb.png
-inventory/rice.png
-inventory/salad.png
-inventory/salmon dinner.png
-inventory/salmon.png
-inventory/sardine.png
-inventory/scarecrow.png
-inventory/scythe.png
-inventory/seafoam pudding.png
-inventory/shad.png
-inventory/shears.png
-inventory/sheep wool.png
+inventory/item/amaranth.png
+inventory/item/ancient fruit.png
+inventory/item/angler.png
+inventory/item/artichoke.png
+inventory/item/baked fish.png
+inventory/item/bee house.png
+inventory/item/beer.png
+inventory/item/beet.png
+inventory/item/big cow milk.png
+inventory/item/big egg.png
+inventory/item/blue discus.png
+inventory/item/blue jazz.png
+inventory/item/blueberry.png
+inventory/item/bok choy.png
+inventory/item/bomb.png
+inventory/item/bouquet.png
+inventory/item/bread.png
+inventory/item/broccoli.png
+inventory/item/carrot.png
+inventory/item/cauliflower.png
+inventory/item/charcoal kiln.png
+inventory/item/cheese press.png
+inventory/item/cherry bomb.png
+inventory/item/coffee bean.png
+inventory/item/coffee.png
+inventory/item/cookie.png
+inventory/item/corn.png
+inventory/item/cow milk.png
+inventory/item/cranberries.png
+inventory/item/crimsonfish.png
+inventory/item/dehydrator.png
+inventory/item/deluxe retaining soil.png
+inventory/item/deluxe scarecrow.png
+inventory/item/dinosaur egg.png
+inventory/item/dish o' the sea.png
+inventory/item/dorado.png
+inventory/item/duck egg.png
+inventory/item/duck feather.png
+inventory/item/egg.png
+inventory/item/eggplant.png
+inventory/item/fairy rose.png
+inventory/item/farmer's lunch.png
+inventory/item/fiber.png
+inventory/item/flounder.png
+inventory/item/fried egg.png
+inventory/item/fruit salad.png
+inventory/item/furnace.png
+inventory/item/garlic.png
+inventory/item/ghostfish.png
+inventory/item/glacierfish.png
+inventory/item/grape.png
+inventory/item/grass starter.png
+inventory/item/green bean.png
+inventory/item/hash browns.png
+inventory/item/herring.png
+inventory/item/hops.png
+inventory/item/hot pepper.png
+inventory/item/joja cola.png
+inventory/item/kale.png
+inventory/item/keg.png
+inventory/item/legend.png
+inventory/item/lionfish.png
+inventory/item/loom.png
+inventory/item/maki roll.png
+inventory/item/mayonnaise machine.png
+inventory/item/mega bomb.png
+inventory/item/melon.png
+inventory/item/midnight carp.png
+inventory/item/miner's treat.png
+inventory/item/mystic tree seed.png
+inventory/item/oil maker.png
+inventory/item/oil.png
+inventory/item/omelet.png
+inventory/item/pancakes.png
+inventory/item/parsnip.png
+inventory/item/perch.png
+inventory/item/pizza.png
+inventory/item/poppy.png
+inventory/item/potato.png
+inventory/item/powdermelon.png
+inventory/item/preserves jar.png
+inventory/item/pumpkin pie.png
+inventory/item/pumpkin.png
+inventory/item/quality sprinkler.png
+inventory/item/rabbit foot.png
+inventory/item/rabbit fur.png
+inventory/item/radish.png
+inventory/item/rainbow trout.png
+inventory/item/red cabbage.png
+inventory/item/red plate.png
+inventory/item/rhubarb.png
+inventory/item/rice.png
+inventory/item/salad.png
+inventory/item/salmon dinner.png
+inventory/item/salmon.png
+inventory/item/sardine.png
+inventory/item/scarecrow.png
+inventory/item/seafoam pudding.png
+inventory/item/shad.png
+inventory/item/sheep wool.png
+inventory/item/spaghetti.png
+inventory/item/speed-gro.png
+inventory/item/sprinkler.png
+inventory/item/squid.png
+inventory/item/starfruit.png
+inventory/item/stone.png
+inventory/item/strawberry.png
+inventory/item/sugar.png
+inventory/item/summer spangle.png
+inventory/item/summer squash.png
+inventory/item/sunfish.png
+inventory/item/sunflower.png
+inventory/item/survival burger.png
+inventory/item/sweet gem berry.png
+inventory/item/tilapia.png
+inventory/item/tomato.png
+inventory/item/tortilla.png
+inventory/item/triple shot espresso.png
+inventory/item/trout soup.png
+inventory/item/truffle.png
+inventory/item/tulip.png
+inventory/item/tuna.png
+inventory/item/unmilled rice.png
+inventory/item/vegetable medley.png
+inventory/item/vinegar.png
+inventory/item/wedding ring.png
+inventory/item/wheat flour.png
+inventory/item/wheat.png
+inventory/item/wood.png
+inventory/item/yam.png
 inventory/skill farming icon.png
 inventory/skill fishing icon.png
 inventory/skill foraging icon.png
 inventory/skill mining icon.png
-inventory/spaghetti.png
-inventory/speed-gro.png
-inventory/sprinkler.png
-inventory/squid.png
-inventory/starfruit.png
-inventory/steel axe.png
-inventory/steel hoe.png
-inventory/steel pickaxe.png
-inventory/steel watering can.png
-inventory/stone.png
-inventory/strawberry.png
-inventory/sugar.png
-inventory/summer spangle.png
-inventory/summer squash.png
-inventory/sunfish.png
-inventory/sunflower.png
-inventory/survival burger.png
-inventory/sweet gem berry.png
-inventory/tilapia.png
-inventory/tomato.png
-inventory/tortilla.png
-inventory/training rod.png
-inventory/triple shot espresso.png
-inventory/trout soup.png
-inventory/truffle.png
-inventory/tulip.png
-inventory/tuna.png
 inventory/unknown.png
-inventory/unmilled rice.png
-inventory/vegetable medley.png
-inventory/vinegar.png
-inventory/watering can.png
-inventory/wedding ring.png
-inventory/wheat flour.png
-inventory/wheat.png
-inventory/wood.png
-inventory/yam.png
 items/AnimalProducts.png
 items/Crafts.png
+items/Crops.png
 items/Fishes.png
 items/Foods.png
 items/ForagingCrops.png
 items/ForagingMinerals.png
+items/Fruits.png
 items/Gifts.png
 items/Ingredients.png
 items/Saplings.png
@@ -412,3 +370,32 @@ time/Winter.png
 time/timeBar.png
 time/weather/rain.png
 time/weather/snow.png
+tools/axe.png
+tools/bamboo pole.png
+tools/copper axe.png
+tools/copper hoe.png
+tools/copper pickaxe.png
+tools/copper watering can.png
+tools/fiberglass rod.png
+tools/fish smoker.png
+tools/gold axe.png
+tools/gold hoe.png
+tools/gold pickaxe.png
+tools/gold watering can.png
+tools/hoe.png
+tools/iridium axe.png
+tools/iridium hoe.png
+tools/iridium pickaxe.png
+tools/iridium rod.png
+tools/iridium sprinkler.png
+tools/iridium watering can.png
+tools/milk pail.png
+tools/pickaxe.png
+tools/scythe.png
+tools/shears.png
+tools/steel axe.png
+tools/steel hoe.png
+tools/steel pickaxe.png
+tools/steel watering can.png
+tools/training rod.png
+tools/watering can.png

@@ -10,7 +10,7 @@ import io.Ap.StardewValley.Common.Model.Plants.*;
 import java.util.HashMap;
 
 public enum FoodRecipe {
-    FriedEgg("Fried egg", "1 egg", new HashMap<>() {{
+    FriedEgg("Fried Egg", "1 egg", new HashMap<>() {{
         put(new AnimalProduct(AnimalProductType.Egg), 1);
     }}),
     BakedFish("Baked Fish", "1 sardine\n1 salmon\n1 wheat", new HashMap<>() {{
@@ -26,7 +26,7 @@ public enum FoodRecipe {
         put(new AnimalProduct(AnimalProductType.Egg), 1);
         put(new AnimalProduct(AnimalProductType.CowMilk), 1);
     }}),
-    PumpkinPie("Pumpkin pie", "1 pumpkin\n1 wheat flour\n1 cow milk\n1 sugar", new HashMap<>() {{
+    PumpkinPie("Pumpkin Pie", "1 pumpkin\n1 wheat flour\n1 cow milk\n1 sugar", new HashMap<>() {{
         put(new Ingredient(IngredientType.WheatFlour), 1);
         put(new Crop(CropType.Pumpkin), 1);
         put(new AnimalProduct(AnimalProductType.CowMilk), 1);
