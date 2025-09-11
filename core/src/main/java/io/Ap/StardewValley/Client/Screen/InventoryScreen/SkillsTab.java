@@ -1,5 +1,6 @@
 package io.Ap.StardewValley.Client.Screen.InventoryScreen;
 
+import com.badlogic.gdx.Gdx;
 import com.badlogic.gdx.graphics.Texture;
 import com.badlogic.gdx.scenes.scene2d.ui.*;
 import com.badlogic.gdx.scenes.scene2d.utils.TextureRegionDrawable;
@@ -78,7 +79,8 @@ public class SkillsTab extends Window {
         for (Skill skill : Arrays.asList(Skill.Farming, Skill.Mining, Skill.Fishing, Skill.Foraging)) {
             Table row = new Table();
             row.left();
-            Image skillIcon = new Image(ItemTextureBank.getTexture("skill " + skill.name().toLowerCase() + " icon"));
+            Image skillIcon = new Image(ItemTextureBank.getTexture("skill " + skill.name() + " icon"));
+            //Image skillIcon = new Image(new Texture(Gdx.files.internal("inventory/iconSkill" + skill.name() + ".png")));
             // Tooltip
             TextTooltip tooltip = new TextTooltip(getSkillDescription(skill), skin, "letter");
             skillIcon.addListener(tooltip);

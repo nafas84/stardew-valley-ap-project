@@ -57,16 +57,23 @@ inventory/1 levels.png
 inventory/2 levels.png
 inventory/3 levels.png
 inventory/4 levels.png
+inventory/Skill/skill farming icon.png
+inventory/Skill/skill fishing icon.png
+inventory/Skill/skill foraging icon.png
+inventory/Skill/skill mining icon.png
+inventory/Skill/unknown.png
 inventory/cooking button 0.png
 inventory/cooking button 1.png
+inventory/iconSkillFarming.png
+inventory/iconSkillFishing.png
+inventory/iconSkillForaging.png
+inventory/iconSkillMining.png
 inventory/inventory button 0.png
 inventory/inventory button 1.png
 inventory/inventory button 2.png
 inventory/inventory button 3.png
 inventory/inventory button 4.png
 inventory/inventory button 5.png
-inventory/inventory button 7.png
-inventory/inventory button 8.png
 inventory/skill farming icon.png
 inventory/skill fishing icon.png
 inventory/skill foraging icon.png
