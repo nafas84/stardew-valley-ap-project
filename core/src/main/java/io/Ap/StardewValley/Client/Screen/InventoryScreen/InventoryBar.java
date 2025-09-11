@@ -169,13 +169,35 @@ public class InventoryBar extends Stage {
     }
 
     public void setSlotImage(int index, TextureRegion texture) {
+        int cellSize = 84;
+
         if (index >= 0 && index < slotButtons.size()) {
-            Drawable image = (texture != null)
-                    ? new TextureRegionDrawable(new TextureRegion(texture))
-                    : null;
-            slotButtons.get(index).getStyle().imageUp = image;
+            if (texture != null) {
+
+                int w = texture.getRegionWidth();
+                int h = texture.getRegionHeight();
+
+                //float scale = Math.min((float) cellSize / w, (float) cellSize / h);
+                float scale = (h < 32) ? 3.2f : 2.6f;
+
+                int drawW = (w < 48) ? Math.round(w * scale) : w;
+                int drawH = (h < 48) ? Math.round(h * scale) : h;
+
+                TextureRegionDrawable drawable = new TextureRegionDrawable(texture);
+                drawable.setMinWidth(drawW);
+                drawable.setMinHeight(drawH);
+
+                ImageTextButton slot = slotButtons.get(index);
+                ImageTextButton.ImageTextButtonStyle style = new ImageTextButton.ImageTextButtonStyle(slot.getStyle());
+                style.imageUp = drawable;
+                slot.setStyle(style);
+            } else {
+                slotButtons.get(index).getStyle().imageUp = null;
+            }
         }
     }
+
+
 
     public void clearSlot(int index) {
         setSlotText(index, "");
