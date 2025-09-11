@@ -2,14 +2,14 @@ package io.Ap.StardewValley.Gson;
 
 
 
-import io.Ap.StardewValley.Model.Shop.BlackSmith.BlackSmith;
-import io.Ap.StardewValley.Model.Shop.CarpentersShop.CarpentersShop;
-import io.Ap.StardewValley.Model.Shop.FishShop.FishShop;
-import io.Ap.StardewValley.Model.Shop.JojaMart.JojaMart;
-import io.Ap.StardewValley.Model.Shop.MarniesRanch.MarniesRanch;
-import io.Ap.StardewValley.Model.Shop.PierresGeneralStore.PierresStore;
-import io.Ap.StardewValley.Model.Shop.Shop;
-import io.Ap.StardewValley.Model.Shop.TheStardropSaloon.TheStardropSaloon;
+import io.Ap.StardewValley.Common.Model.Shop.BlackSmith.BlackSmith;
+import io.Ap.StardewValley.Common.Model.Shop.CarpentersShop.CarpentersShop;
+import io.Ap.StardewValley.Common.Model.Shop.FishShop.FishShop;
+import io.Ap.StardewValley.Common.Model.Shop.JojaMart.JojaMart;
+import io.Ap.StardewValley.Common.Model.Shop.MarniesRanch.MarniesRanch;
+import io.Ap.StardewValley.Common.Model.Shop.PierresGeneralStore.PierresStore;
+import io.Ap.StardewValley.Common.Model.Shop.Shop;
+import io.Ap.StardewValley.Common.Model.Shop.TheStardropSaloon.TheStardropSaloon;
 import com.google.gson.*;
 
 import java.lang.reflect.Type;

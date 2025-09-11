@@ -1,0 +1,21 @@
+PHASE 2:
+Gdx:
+    1920
+    1055
+Y
+^
+|
+0,0-> X
+------------------------------
+spriteSheet:
+     location | size each sprite| row * col
+etc/gogoli/animations.png: 64*64,
+etc/gogoli/companions.png: 16*16, 12*16
+player/farmer_base: 32*16, 21*18
+player/clothes/shirts: 8*8, 18*4 * 16
+player/clothes/hairs: 32*16, 7*3 * 8
+player/clothes/pants: 32*16, 2*21 * 10*12
+
+///////////////////////////////////////////
+Phase 1: Classes changed:
+Game map, Player

@@ -10,10 +10,10 @@ energy: 45 -> (Nafiseh)
 inventory: 65 (Aynaz)
 plant: 125 -> (Nafiseh, Aynaz)
 tool: 80 -> (Aynaz)
-crafting: 35 -> (Parsa)
+crafting: 35 -> (Parsa) -> Aynaz
 cooking: 95 -> (Aynaz)
-animals: 100 -> (Parsa)
-mini game: 65 -> (Parsa)
+animals: 100 -> (Parsa) -> Nafiseh
+mini game: 65 -> (Parsa) -> Aynaz
 shop: 95 -> (Aynaz)
 npc+interaction: 208 -> (Parsa)
 ---------------------

@@ -1,16 +1,396 @@
-defaultAvatar/avatar1.jpg
-defaultAvatar/avatar2.jpg
-defaultAvatar/avatar3.jpg
-defaultAvatar/avatar4.jpg
-defaultAvatar/avatar5.jpg
-defaultAvatar/avatar6.jpg
-defaultAvatar/avatar7.jpg
-defaultAvatar/avatar8.jpg
-etc/avatar8.jpg
+animal/Crown.png
+animal/GameFish.png
+animal/GreenMiniGame.png
+animal/cat3.png
+etc/FullMap.png
+etc/avatar/0.png
+etc/avatar/1.png
+etc/avatar/2.png
+etc/avatar/3.png
+etc/avatar/4.png
+etc/avatar/5.png
+etc/avatar/6.png
+etc/avatar/7.png
+etc/avatar/8.png
+etc/cursor.png
+etc/gogoli/Bat.png
+etc/gogoli/animations.png
+etc/gogoli/companions.png
+etc/goodNight/goodNight1.png
+etc/goodNight/goodNight2.png
+etc/goodNight/goodNight3.png
+etc/goodNight/goodNight4.png
+etc/goodNight/goodNight5.png
 etc/icon.png
-etc/logo.png
-etc/menu_bg.png
-etc/shash.jpg
+etc/mapImages/Farm1.png
+etc/mapImages/Farm1_Icon.png
+etc/mapImages/Farm1_pixel.png
+etc/mapImages/Farm2.png
+etc/mapImages/Farm2_Icon.png
+etc/mapImages/Farm2_pixel.png
+etc/mapImages/Farm3.png
+etc/mapImages/Farm3_Icon.png
+etc/mapImages/Farm3_pixel.png
+etc/mapImages/Farm4.png
+etc/mapImages/Farm4_Icon.png
+etc/mapImages/Farm4_pixel.png
+etc/mapImages/Farm5.png
+etc/mapImages/Farm5_Icon.png
+etc/mapImages/Farm5_pixel.png
+etc/mapImages/Map.png
+etc/mapImages/farmBackground.png
+etc/menu/background_chill.png
+etc/menu/background_night.png
+etc/menu/background_start.png
+etc/menu/bird.png
+etc/menu/cloud_1.png
+etc/menu/cloud_2.png
+etc/menu/cloud_3.png
+etc/menu/daybg.png
+etc/menu/logo.png
+etc/menu/nightbg.png
+etc/pixel.png
+etc/shadow.png
+etc/sherekVane.png
+inventory/0 hearts.png
+inventory/0 levels.png
+inventory/1 hearts.png
+inventory/1 levels.png
+inventory/10 hearts.png
+inventory/11 hearts.png
+inventory/12 hearts.png
+inventory/13 hearts.png
+inventory/14 hearts.png
+inventory/2 hearts.png
+inventory/2 levels.png
+inventory/3 hearts.png
+inventory/3 levels.png
+inventory/4 hearts.png
+inventory/4 levels.png
+inventory/5 hearts.png
+inventory/6 hearts.png
+inventory/7 hearts.png
+inventory/8 hearts.png
+inventory/9 hearts.png
+inventory/amaranth.png
+inventory/ancient fruit.png
+inventory/angler.png
+inventory/artichoke.png
+inventory/axe.png
+inventory/baked fish.png
+inventory/bamboo pole.png
+inventory/bee house.png
+inventory/beer.png
+inventory/beet.png
+inventory/big cow milk.png
+inventory/big egg.png
+inventory/blue discus.png
+inventory/blue jazz.png
+inventory/blueberry.png
+inventory/bok choy.png
+inventory/bomb.png
+inventory/bouquet.png
+inventory/bread.png
+inventory/broccoli.png
+inventory/carrot.png
+inventory/cauliflower.png
+inventory/charcoal kiln.png
+inventory/cheese press.png
+inventory/cherry bomb.png
+inventory/coffee bean.png
+inventory/coffee.png
+inventory/cookie.png
+inventory/cooking button 0.png
+inventory/cooking button 1.png
+inventory/copper axe.png
+inventory/copper hoe.png
+inventory/copper pickaxe.png
+inventory/copper watering can.png
+inventory/corn.png
+inventory/cow milk.png
+inventory/cranberries.png
+inventory/crimsonfish.png
+inventory/dehydrator.png
+inventory/deluxe retaining soil.png
+inventory/deluxe scarecrow.png
+inventory/dinosaur egg.png
+inventory/dish o' the sea.png
+inventory/dorado.png
+inventory/duck egg.png
+inventory/duck feather.png
+inventory/egg.png
+inventory/eggplant.png
+inventory/fairy rose.png
+inventory/farmer's lunch.png
+inventory/fiber.png
+inventory/fiberglass rod.png
+inventory/fish smoker.png
+inventory/flounder.png
+inventory/fried egg.png
+inventory/fruit salad.png
+inventory/furnace.png
+inventory/garlic.png
+inventory/ghostfish.png
+inventory/glacierfish.png
+inventory/gold axe.png
+inventory/gold hoe.png
+inventory/gold pickaxe.png
+inventory/gold watering can.png
+inventory/grape.png
+inventory/grass starter.png
+inventory/green bean.png
+inventory/hash browns.png
+inventory/herring.png
+inventory/hoe.png
+inventory/hops.png
+inventory/hot pepper.png
+inventory/inventory button 0.png
+inventory/inventory button 1.png
+inventory/inventory button 2.png
+inventory/inventory button 3.png
+inventory/inventory button 4.png
+inventory/inventory button 5.png
+inventory/inventory button 7.png
+inventory/inventory button 8.png
+inventory/iridium axe.png
+inventory/iridium hoe.png
+inventory/iridium pickaxe.png
+inventory/iridium rod.png
+inventory/iridium sprinkler.png
+inventory/iridium watering can.png
+inventory/joja cola.png
+inventory/kale.png
+inventory/keg.png
+inventory/legend.png
+inventory/lionfish.png
+inventory/loom.png
+inventory/maki roll.png
+inventory/mayonnaise machine.png
+inventory/mega bomb.png
+inventory/melon.png
+inventory/midnight carp.png
+inventory/milk pail.png
+inventory/miner's treat.png
+inventory/mystic tree seed.png
+inventory/oil maker.png
+inventory/oil.png
+inventory/omelet.png
+inventory/pancakes.png
+inventory/parsnip.png
+inventory/perch.png
+inventory/pickaxe.png
+inventory/pizza.png
+inventory/poppy.png
+inventory/potato.png
+inventory/powdermelon.png
+inventory/preserves jar.png
+inventory/pumpkin pie.png
+inventory/pumpkin.png
+inventory/quality sprinkler.png
+inventory/rabbit foot.png
+inventory/rabbit fur.png
+inventory/radish.png
+inventory/rainbow trout.png
+inventory/red cabbage.png
+inventory/red plate.png
+inventory/rhubarb.png
+inventory/rice.png
+inventory/salad.png
+inventory/salmon dinner.png
+inventory/salmon.png
+inventory/sardine.png
+inventory/scarecrow.png
+inventory/scythe.png
+inventory/seafoam pudding.png
+inventory/shad.png
+inventory/shears.png
+inventory/sheep wool.png
+inventory/skill farming icon.png
+inventory/skill fishing icon.png
+inventory/skill foraging icon.png
+inventory/skill mining icon.png
+inventory/spaghetti.png
+inventory/speed-gro.png
+inventory/sprinkler.png
+inventory/squid.png
+inventory/starfruit.png
+inventory/steel axe.png
+inventory/steel hoe.png
+inventory/steel pickaxe.png
+inventory/steel watering can.png
+inventory/stone.png
+inventory/strawberry.png
+inventory/sugar.png
+inventory/summer spangle.png
+inventory/summer squash.png
+inventory/sunfish.png
+inventory/sunflower.png
+inventory/survival burger.png
+inventory/sweet gem berry.png
+inventory/tilapia.png
+inventory/tomato.png
+inventory/tortilla.png
+inventory/training rod.png
+inventory/triple shot espresso.png
+inventory/trout soup.png
+inventory/truffle.png
+inventory/tulip.png
+inventory/tuna.png
+inventory/unknown.png
+inventory/unmilled rice.png
+inventory/vegetable medley.png
+inventory/vinegar.png
+inventory/watering can.png
+inventory/wedding ring.png
+inventory/wheat flour.png
+inventory/wheat.png
+inventory/wood.png
+inventory/yam.png
+items/AnimalProducts.png
+items/Crafts.png
+items/Fishes.png
+items/Foods.png
+items/ForagingCrops.png
+items/ForagingMinerals.png
+items/Gifts.png
+items/Ingredients.png
+items/Saplings.png
+items/Seeds.png
+map/SecretNotesImages.png
+map/buildings/Barn.png
+map/buildings/BuildGreenHouse.png
+map/buildings/Coop.png
+map/buildings/ShippingBin.png
+map/buildings/Well.png
+map/items/CropStages.png
+map/items/TreeStages.png
+map/items/TreeStages2.png
+map/items/additional.png
+map/maps/Farm1.tmx
+map/maps/Farm2.tmx
+map/maps/Farm3.tmx
+map/maps/Farm4.tmx
+map/maps/Farm5.tmx
+map/maps/Farm_FourCorners.tmx
+map/maps/Farm_Island.tmx
+map/maps/Farm_Ranching.tmx
+map/maps/Town.tmx
+map/maps/path1.tmx
+map/maps/path2.tmx
+map/maps/path3.tmx
+map/maps/path4.tmx
+map/tiles/hoeDirt.png
+map/tiles/hoeDirtDark.png
+map/tiles/hoeDirtSnow.png
+map/tilesets/Building/GreenHouseBuilding.tsx
+map/tilesets/Building/Greenhouse.png
+map/tilesets/Building/HouseBuilding.tsx
+map/tilesets/Building/houses.png
+map/tilesets/Characters.tsx
+map/tilesets/Festivals.png
+map/tilesets/Festivals.tsx
+map/tilesets/Paths.tsx
+map/tilesets/characterSheet.png
+map/tilesets/fall_Shadows.png
+map/tilesets/fall_Shadows.tsx
+map/tilesets/fall_Waterfalls.png
+map/tilesets/fall_Waterfalls.tsx
+map/tilesets/fall_beach.png
+map/tilesets/fall_beach.tsx
+map/tilesets/fall_island_tilesheet_1.png
+map/tilesets/fall_island_tilesheet_1.tsx
+map/tilesets/fall_monsterGraveTiles.png
+map/tilesets/fall_monsterGraveTiles.tsx
+map/tilesets/fall_outdoorTileSheet_extra.png
+map/tilesets/fall_outdoorTileSheet_extra.tsx
+map/tilesets/fall_outdoorsTileSheet.png
+map/tilesets/fall_outdoorsTileSheet.tsx
+map/tilesets/fall_outdoorsTileSheet2.png
+map/tilesets/fall_outdoorsTileSheet2.tsx
+map/tilesets/fall_town.png
+map/tilesets/fall_town.tsx
+map/tilesets/island_tilesheet_1.png
+map/tilesets/island_tilesheet_1.tsx
+map/tilesets/paths.png
+map/tilesets/spring_Shadows.png
+map/tilesets/spring_Shadows.tsx
+map/tilesets/spring_Waterfalls.png
+map/tilesets/spring_Waterfalls.tsx
+map/tilesets/spring_beach.png
+map/tilesets/spring_beach.tsx
+map/tilesets/spring_island_tilesheet_1.png
+map/tilesets/spring_island_tilesheet_1.tsx
+map/tilesets/spring_monsterGraveTiles.png
+map/tilesets/spring_monsterGraveTiles.tsx
+map/tilesets/spring_outdoorTileSheet_extra.png
+map/tilesets/spring_outdoorTileSheet_extra.tsx
+map/tilesets/spring_outdoorsTileSheet.png
+map/tilesets/spring_outdoorsTileSheet.tsx
+map/tilesets/spring_outdoorsTileSheet2.png
+map/tilesets/spring_outdoorsTileSheet2.tsx
+map/tilesets/spring_town.png
+map/tilesets/spring_town.tsx
+map/tilesets/summer_Shadows.png
+map/tilesets/summer_Waterfalls.png
+map/tilesets/summer_Waterfalls.tsx
+map/tilesets/summer_beach.png
+map/tilesets/summer_island_tilesheet_1.png
+map/tilesets/summer_monsterGraveTiles.png
+map/tilesets/summer_outdoorTileSheet_extra.png
+map/tilesets/summer_outdoorsTileSheet.png
+map/tilesets/summer_outdoorsTileSheet2.png
+map/tilesets/summer_town.png
+map/tilesets/townInterior.png
+map/tilesets/townInterior.tsx
+map/tilesets/winter_Shadows.png
+map/tilesets/winter_Shadows.tsx
+map/tilesets/winter_Waterfalls.png
+map/tilesets/winter_Waterfalls.tsx
+map/tilesets/winter_beach.png
+map/tilesets/winter_beach.tsx
+map/tilesets/winter_island_tilesheet_1.png
+map/tilesets/winter_island_tilesheet_1.tsx
+map/tilesets/winter_monsterGraveTiles.png
+map/tilesets/winter_monsterGraveTiles.tsx
+map/tilesets/winter_outdoorTileSheet_extra.png
+map/tilesets/winter_outdoorTileSheet_extra.tsx
+map/tilesets/winter_outdoorsTileSheet.png
+map/tilesets/winter_outdoorsTileSheet.tsx
+map/tilesets/winter_outdoorsTileSheet2.png
+map/tilesets/winter_outdoorsTileSheet2.tsx
+map/tilesets/winter_town.png
+map/tilesets/winter_town.tsx
+player/body_boy.png
+player/body_girl.png
+player/clothes/accessories.png
+player/clothes/hairstyles.png
+player/clothes/hairstyles2.png
+player/clothes/hats.png
+player/clothes/hats_animals.png
+player/clothes/pants.png
+player/clothes/shirts.png
+player/hand_01.png
+player/hand_01_girl.png
+player/hand_02.png
+player/hand_02_girl.png
+player/pants/pant_0.png
+player/pants/pant_1.png
+player/pants/pant_2.png
+player/pants/pant_3.png
+player/pants/pant_4.png
+player/pants/pant_5.png
+player/pants/pant_6.png
+player/pants/pant_7.png
+player/pants/pant_8.png
+player/pants/pant_9.png
+player/tools/tools.png
+shop/Clint.png
+shop/Gus.png
+shop/Marnie.png
+shop/Morris.png
+shop/Pierre.png
+shop/Robin.png
+shop/Willy.png
 skin/04B_30__.fnt
 skin/NzSkin.atlas
 skin/NzSkin.json
@@ -20,3 +400,15 @@ skin/impact(1).fnt
 skin/impact(3).fnt
 skin/mac's Extended Minecraft Bold Italic.fnt
 skin/mac's Minecraft(1).fnt
+time/Fall.png
+time/Green.png
+time/Rain.png
+time/Snow.png
+time/Spring.png
+time/Storm.png
+time/Summer.png
+time/Sunny.png
+time/Winter.png
+time/timeBar.png
+time/weather/rain.png
+time/weather/snow.png
