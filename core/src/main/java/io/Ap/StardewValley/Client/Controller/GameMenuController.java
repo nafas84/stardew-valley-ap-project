@@ -76,6 +76,7 @@ public class GameMenuController {
             players.add(new Player("Black", "Black", 0, 0, 0, user2.getId(), 3));
         }
 
+
         if (username3 != null) {
             User user3 = App.getUserByUsername(username3);
             if (user3 == null)
