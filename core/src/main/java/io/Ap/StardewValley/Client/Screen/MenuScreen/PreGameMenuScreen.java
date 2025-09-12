@@ -392,12 +392,10 @@ public class PreGameMenuScreen implements Screen {
     }
 
     private void updateFarmImages() {
-        // به‌روزرسانی آیکون فارم
         farmIconImage.setDrawable(new TextureRegionDrawable(
                 new TextureRegion(new Texture(Gdx.files.internal("etc/mapImages/Farm" + farmId + "_Icon.png")))
         ));
 
-        // به‌روزرسانی تصویر فارم
         farmImage.setDrawable(new TextureRegionDrawable(
                 new TextureRegion(new Texture(Gdx.files.internal("etc/mapImages/Farm" + farmId + "_pixel.png")))
         ));
