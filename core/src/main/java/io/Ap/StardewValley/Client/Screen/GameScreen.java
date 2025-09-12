@@ -3,12 +3,14 @@ package io.Ap.StardewValley.Client.Screen;
 import com.badlogic.gdx.*;
 import com.badlogic.gdx.graphics.*;
 import com.badlogic.gdx.graphics.g2d.SpriteBatch;
+import com.badlogic.gdx.math.Interpolation;
 import com.badlogic.gdx.math.MathUtils;
 import com.badlogic.gdx.scenes.scene2d.Stage;
 import com.badlogic.gdx.scenes.scene2d.Touchable;
 import com.badlogic.gdx.scenes.scene2d.actions.Actions;
 import com.badlogic.gdx.scenes.scene2d.ui.*;
 import com.badlogic.gdx.utils.Align;
+import com.badlogic.gdx.utils.Scaling;
 import com.badlogic.gdx.utils.ScreenUtils;
 import com.badlogic.gdx.utils.Timer;
 import com.badlogic.gdx.utils.viewport.ScreenViewport;
@@ -449,7 +451,7 @@ public class GameScreen implements Screen, InputProcessor {
         Texture texture = new Texture(Gdx.files.internal("etc/goodNight/goodNight" + rand + ".png"));
         Image background = new Image(texture);
 
-        Texture texture2 = new Texture(Gdx.files.internal("etc/goodNight/tashakor.png"));
+        Texture texture2 = new Texture(Gdx.files.internal("etc/goodNight/matn.png"));
         Image tashakor = new Image(texture2);
 
         background.setFillParent(true);
@@ -460,14 +462,32 @@ public class GameScreen implements Screen, InputProcessor {
         overlay.add(background);
         overlay.add(table);
 
-        stackBar.setVisible(false);
+        tashakor.setScaling(Scaling.none);
+        tashakor.setSize(texture2.getWidth(), texture2.getHeight());
+        tashakor.setPosition(0, 40f);
 
+        Container<Image> container = new Container<>(tashakor);
+        container.align(Align.bottomLeft);
+        container.padBottom(40f);
+        container.setPosition(-tashakor.getWidth(), 40f);
+
+        overlay.addActor(container);
+
+
+        stackBar.setVisible(false);
         stage.addActor(overlay);
 
         overlay.getColor().a = 0f;
         overlay.addAction(Actions.sequence(
                 Actions.fadeIn(2f),
-                Actions.delay(1f),
+                Actions.run(() -> {
+                    float targetX = stage.getWidth();
+                    tashakor.addAction(Actions.sequence(
+                            Actions.moveTo(targetX, 40f, 7f, Interpolation.linear),
+                            Actions.removeActor()
+                    ));
+                }),
+                Actions.delay(6f),
                 Actions.fadeOut(2f),
                 Actions.run(() -> {
                     overlay.remove();
@@ -480,6 +500,7 @@ public class GameScreen implements Screen, InputProcessor {
                 })
         ));
     }
+
 
     private void setFullMap() {
         Pixmap basePixmap = new Pixmap(Gdx.files.internal("etc/mapImages/Map.png"));

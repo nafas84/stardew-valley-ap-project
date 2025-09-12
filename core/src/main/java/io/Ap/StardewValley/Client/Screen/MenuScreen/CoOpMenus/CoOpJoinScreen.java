@@ -123,10 +123,10 @@ public class CoOpJoinScreen implements Screen {
             @Override
             public void clicked(InputEvent event, float x, float y) {
                 //TODO
-                Result result = ClientLobbyController.joinLobby(lobbyName.getText(), lobbyPassword.getText());
-                if (result.isSuccessful()) {
-                    StardewValley.getGame().setScreen(new PreGameMenuScreen(false, lobbyName.getText()));
-                }
+//                Result result = ClientLobbyController.joinLobby(lobbyName.getText(), lobbyPassword.getText());
+//                if (result.isSuccessful()) {
+//                    StardewValley.getGame().setScreen(new PreGameMenuScreen(false, lobbyName.getText()));
+//                }
             }
         });
 
@@ -140,7 +140,7 @@ public class CoOpJoinScreen implements Screen {
         refreshButton.addListener(new ClickListener() {
             @Override
             public void clicked(InputEvent event, float x, float y) {
-                lobbyList.setText(ClientLobbyController.getLobbyList().message());
+                //lobbyList.setText(ClientLobbyController.getLobbyList().message());
             }
         });
 
