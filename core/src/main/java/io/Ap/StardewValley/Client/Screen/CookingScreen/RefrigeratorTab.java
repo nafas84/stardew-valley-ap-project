@@ -43,12 +43,12 @@ public class RefrigeratorTab extends Window {
 
         fridgeTable = new Table();
         fridgeTable.top().left();
-        fridgeScrollPane = new ScrollPane(fridgeTable, skin, "inventory");
+        fridgeScrollPane = new ScrollPane(fridgeTable, skin, "Dark");
         fridgeScrollPane.setFadeScrollBars(false);
 
         inventoryTable = new Table();
         inventoryTable.top().right();
-        inventoryScrollPane = new ScrollPane(inventoryTable, skin, "inventory");
+        inventoryScrollPane = new ScrollPane(inventoryTable, skin, "Dark");
         inventoryScrollPane.setFadeScrollBars(false);
 
         update();

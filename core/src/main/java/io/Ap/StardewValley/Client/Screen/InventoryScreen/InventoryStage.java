@@ -39,7 +39,7 @@ public class InventoryStage extends Stage {
             final int index = i;
 
             ImageTextButton.ImageTextButtonStyle style = new ImageTextButton.ImageTextButtonStyle(
-                    skin.get("inventoryButton", ImageTextButton.ImageTextButtonStyle.class)
+                    skin.get("Tab", ImageTextButton.ImageTextButtonStyle.class)
             );
             Texture texture = new Texture(Gdx.files.internal("inventory/inventory button " + i + ".png"));
             TextureRegionDrawable icon = new TextureRegionDrawable(new TextureRegion(texture));

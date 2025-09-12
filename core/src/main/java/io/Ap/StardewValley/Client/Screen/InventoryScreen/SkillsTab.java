@@ -111,7 +111,7 @@ public class SkillsTab extends Window {
             row.left();
             Label skillLabel = new Label(skill.name(), skin);
             // Tooltip
-            TextTooltip tooltip = new TextTooltip(getSkillDescription(skill), skin, "letter");
+            TextTooltip tooltip = new TextTooltip(getSkillDescription(skill), skin, "Letter");
             skillLabel.addListener(tooltip);
             row.add(skillLabel).padRight(15);
             titleTable.add(row).right().padBottom(50).row();
@@ -123,7 +123,7 @@ public class SkillsTab extends Window {
             Image skillIcon = new Image(ItemTextureBank.getTexture("skill " + skill.name() + " icon"));
             //Image skillIcon = new Image(new Texture(Gdx.files.internal("inventory/iconSkill" + skill.name() + ".png")));
             // Tooltip
-            TextTooltip tooltip = new TextTooltip(getSkillDescription(skill), skin, "letter");
+            TextTooltip tooltip = new TextTooltip(getSkillDescription(skill), skin, "Letter");
             skillIcon.addListener(tooltip);
             row.add(skillIcon).size(48).padRight(25);
             iconTable.add(row).left().padBottom(45).row();

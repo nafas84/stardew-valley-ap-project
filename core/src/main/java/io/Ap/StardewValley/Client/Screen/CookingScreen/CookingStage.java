@@ -81,7 +81,7 @@ public class CookingStage extends Stage{
     private void makeRefrigeratorButton() {
 
         ImageTextButton.ImageTextButtonStyle style = new ImageTextButton.ImageTextButtonStyle(
-                skin.get("inventoryButton", ImageTextButton.ImageTextButtonStyle.class)
+                skin.get("Tab", ImageTextButton.ImageTextButtonStyle.class)
         );
         Texture texture = new Texture(Gdx.files.internal("inventory/cooking button 0.png"));
         TextureRegionDrawable icon = new TextureRegionDrawable(new TextureRegion(texture));
@@ -126,7 +126,7 @@ public class CookingStage extends Stage{
     private void makeCookingButton() {
 
         ImageTextButton.ImageTextButtonStyle style = new ImageTextButton.ImageTextButtonStyle(
-                skin.get("inventoryButton", ImageTextButton.ImageTextButtonStyle.class)
+                skin.get("Tab", ImageTextButton.ImageTextButtonStyle.class)
         );
         Texture texture = new Texture(Gdx.files.internal("inventory/cooking button 1.png"));
         TextureRegionDrawable icon = new TextureRegionDrawable(new TextureRegion(texture));

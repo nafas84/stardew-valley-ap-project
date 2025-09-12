@@ -50,7 +50,7 @@ public class ShippingBinWindow extends Window {
 
 
         leftPart = new Table();
-        scrollPane = new ScrollPane(leftPart, skin, "inventory");
+        scrollPane = new ScrollPane(leftPart, skin, "Dark");
         scrollPane.setFadeScrollBars(false);
         leftPart.top().left();
 

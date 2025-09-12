@@ -39,7 +39,7 @@ public class CraftTab extends Window {
 
         recipeTable = new Table();
         recipeTable.top().left();
-        recipeScrollPane = new ScrollPane(recipeTable, skin, "inventory");
+        recipeScrollPane = new ScrollPane(recipeTable, skin, "Dark");
         recipeScrollPane.setFadeScrollBars(false);
 
         update();
@@ -114,7 +114,7 @@ public class CraftTab extends Window {
                 CraftRecipe recipe = craftRecipes.get(i);
                 recipeButtonToCraftRecipe.put(button, recipe);
 
-                TextTooltip tooltip = new TextTooltip(recipe.getName() + ":\n" + recipe.getRecipeString(), skin, "letter");
+                TextTooltip tooltip = new TextTooltip(recipe.getName() + ":\n" + recipe.getRecipeString(), skin, "Letter");
                 button.addListener(tooltip);
             }
 
