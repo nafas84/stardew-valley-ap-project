@@ -196,11 +196,11 @@ public class GameScreenController {
 //           player.addAnimal(new Animal(AnimalType.Dinosaur, "kir"));
 //           player.addAnimal(new Animal(AnimalType.Sheep, "sheep"));
             //App.getGame().getCurrentPlayer().setEnergy(-1);
-            //App.getGame().getCurrentTime().setHour(23);
-            //App.getGame().getCurrentTime().setMinute(59);
+            App.getGame().getCurrentTime().setHour(23);
+            App.getGame().getCurrentTime().setMinute(59);
             //App.getGame().getMap().build(new Coordinate(7, 27), BuildingType.GreenHouseBuild);
-            view.setCurrentResult(MapController.buildGreenHouse());
-            //App.getGame().getCurrentTime().addDay(27);
+            //view.setCurrentResult(MapController.buildGreenHouse());
+            App.getGame().getCurrentTime().addDay(27);
             //goToNextDay();
             //App.getGame().getMap().getFullMap()[App.getGame().getCurrentPlayer().getCoordinate().getX()][App.getGame().getCurrentPlayer().getCoordinate().getY()].setFertilize(1);
 

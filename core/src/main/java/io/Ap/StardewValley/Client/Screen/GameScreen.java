@@ -449,6 +449,9 @@ public class GameScreen implements Screen, InputProcessor {
         Texture texture = new Texture(Gdx.files.internal("etc/goodNight/goodNight" + rand + ".png"));
         Image background = new Image(texture);
 
+        Texture texture2 = new Texture(Gdx.files.internal("etc/goodNight/tashakor.png"));
+        Image tashakor = new Image(texture2);
+
         background.setFillParent(true);
 
         Table table = new Table();
@@ -470,6 +473,7 @@ public class GameScreen implements Screen, InputProcessor {
                     overlay.remove();
                     stackBar.setVisible(true);
                     texture.dispose();
+                    texture2.dispose();
                     if (onFinished != null) {
                         onFinished.run();
                     }
