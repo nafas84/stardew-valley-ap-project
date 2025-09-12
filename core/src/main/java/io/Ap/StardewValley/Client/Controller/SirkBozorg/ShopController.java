@@ -208,8 +208,10 @@ public class ShopController {
         if (wanted instanceof Tool) {
             return new Result(false, "you can't sell a tool!");
         }
-        player.removeItemFromInventory(name, 1);
-        player.addCount(wanted.getPrice());
+        if (wanted != null) {
+            player.removeItemFromInventory(name, 1);
+            player.addCount(wanted.getPrice());
+        }
 
         return new Result(true, "Now you send this item to hell(shipping bin). Tomorrow به حسابت زده میشه");
     }

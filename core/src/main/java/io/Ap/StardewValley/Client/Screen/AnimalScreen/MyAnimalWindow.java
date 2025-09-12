@@ -39,7 +39,7 @@ public class MyAnimalWindow extends Window {
 
         allItemsTable = new Table(skin);
 
-        allItemsScroll = new ScrollPane(allItemsTable, skin, "inventory");
+        allItemsScroll = new ScrollPane(allItemsTable, skin, "Dark");
 
         Stack scrollStack = new Stack();
         scrollStack.add(allItemsScroll);

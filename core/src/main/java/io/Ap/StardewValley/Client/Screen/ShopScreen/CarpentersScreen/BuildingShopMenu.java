@@ -28,7 +28,7 @@ public class BuildingShopMenu extends Table {
         super(skin);
         this.shop = shop;
 
-        closeButton = new ImageButton(skin, "trash");
+        closeButton = new ImageButton(skin, "Close");
         closeButton.addListener(new ClickListener() {
             @Override
             public void clicked(InputEvent event, float x, float y) {

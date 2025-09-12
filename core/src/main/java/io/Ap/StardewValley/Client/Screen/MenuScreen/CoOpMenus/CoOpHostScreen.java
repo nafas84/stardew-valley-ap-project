@@ -140,10 +140,10 @@ public class CoOpHostScreen implements Screen {
             @Override
             public void clicked(InputEvent event, float x, float y) {
                 //TODO
-                Result result = ClientLobbyController.makeLobby(name.getText(), password.getText(), visibilityCheckbox.isChecked(), privacyCheckbox.isChecked());
-                if (result.isSuccessful()) {
-                    StardewValley.getGame().setScreen(new PreGameMenuScreen(true, name.getText()));
-                }
+//                Result result = ClientLobbyController.makeLobby(name.getText(), password.getText(), visibilityCheckbox.isChecked(), privacyCheckbox.isChecked());
+//                if (result.isSuccessful()) {
+//                    StardewValley.getGame().setScreen(new PreGameMenuScreen(true, name.getText()));
+//                }
             }
         });
 

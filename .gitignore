@@ -20,6 +20,7 @@ gradle-app.setting
 
 # Build outputs
 /build/
+/core/build/tmp/
 /out/
 
 ## IntelliJ, Android Studio:

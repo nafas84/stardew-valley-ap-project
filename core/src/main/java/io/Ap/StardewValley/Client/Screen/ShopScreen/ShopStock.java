@@ -49,8 +49,8 @@ public class ShopStock extends Window {
         allItemsTable = new Table(skin);
         availableItemsTable = new Table(skin);
 
-        allItemsScroll = new ScrollPane(allItemsTable, skin, "inventory");
-        availableItemsScroll = new ScrollPane(availableItemsTable, skin, "inventory");
+        allItemsScroll = new ScrollPane(allItemsTable, skin, "Dark");
+        availableItemsScroll = new ScrollPane(availableItemsTable, skin, "Dark");
 
         onlyAvailableCheckBox.addListener(new ClickListener() {
             @Override

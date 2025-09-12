@@ -16,11 +16,14 @@ etc/cursor.png
 etc/gogoli/Bat.png
 etc/gogoli/animations.png
 etc/gogoli/companions.png
+etc/goodNight/Na/goodNight1.png
+etc/goodNight/Na/goodNight2.png
+etc/goodNight/Na/goodNight3.png
+etc/goodNight/Na/goodNight4.png
 etc/goodNight/goodNight1.png
 etc/goodNight/goodNight2.png
 etc/goodNight/goodNight3.png
-etc/goodNight/goodNight4.png
-etc/goodNight/goodNight5.png
+etc/goodNight/matn.png
 etc/icon.png
 etc/mapImages/Farm1.png
 etc/mapImages/Farm1_Icon.png

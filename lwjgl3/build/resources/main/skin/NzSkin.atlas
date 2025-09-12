@@ -4,9 +4,16 @@ size: 2048, 2048
 format: RGBA8888
 filter: Linear, Linear
 repeat: none
+back1
+  rotate: false
+  xy: 225, 293
+  size: 16, 16
+  orig: 16, 16
+  offset: 0, 0
+  index: -1
 background
   rotate: false
-  xy: 1905, 1951
+  xy: 1397, 1464
   size: 98, 96
   split: 44, 39, 35, 35
   pad: 28, 33, 29, 28
@@ -15,7 +22,7 @@ background
   index: -1
 backgroundPedding
   rotate: false
-  xy: 1905, 1951
+  xy: 1397, 1464
   size: 98, 96
   split: 36, 41, 39, 43
   pad: 20, 24, 0, 0
@@ -24,7 +31,7 @@ backgroundPedding
   index: -1
 hScroll
   rotate: false
-  xy: 509, 584
+  xy: 677, 628
   size: 29, 24
   split: 9, 14, 12, 11
   pad: 9, 10, 8, 10
@@ -33,7 +40,7 @@ hScroll
   index: -1
 hScrollKnob
   rotate: false
-  xy: 1905, 1872
+  xy: 2007, 1981
   size: 40, 24
   split: 14, 19, 10, 11
   pad: 0, 0, 0, 0
@@ -49,7 +56,7 @@ miniGame3
   index: -1
 overList
   rotate: false
-  xy: 975, 1070
+  xy: 577, 574
   size: 32, 16
   split: 7, 12, 6, 7
   pad: 0, 0, 0, 0
@@ -67,7 +74,7 @@ selectBox
   index: -1
 selectListBoard
   rotate: false
-  xy: 1957, 1933
+  xy: 1497, 1476
   size: 32, 16
   split: 8, 14, 6, 9
   pad: 6, 6, 5, 5
@@ -76,7 +83,7 @@ selectListBoard
   index: -1
 vScroll
   rotate: false
-  xy: 559, 629
+  xy: 1066, 1114
   size: 24, 29
   split: 8, 13, 14, 12
   pad: 8, 10, 9, 9
@@ -85,7 +92,7 @@ vScroll
   index: -1
 vScrollKnob
   rotate: false
-  xy: 638, 680
+  xy: 1399, 1380
   size: 24, 40
   split: 11, 11, 17, 13
   pad: 0, 0, 0, 0
@@ -103,21 +110,21 @@ window2
   index: -1
 checkBox
   rotate: false
-  xy: 1349, 1371
+  xy: 975, 939
   size: 46, 49
   orig: 46, 49
   offset: 0, 0
   index: -1
 overCheckbox
   rotate: false
-  xy: 149, 1
+  xy: 467, 352
   size: 46, 49
   orig: 46, 49
   offset: 0, 0
   index: -1
 selectCheckBox
   rotate: false
-  xy: 101, 1
+  xy: 151, 1
   size: 46, 49
   orig: 46, 49
   offset: 0, 0
@@ -157,18 +164,74 @@ mac's Minecraft(1)
   orig: 504, 188
   offset: 0, 0
   index: -1
+close
+  rotate: false
+  xy: 101, 2
+  size: 48, 48
+  orig: 48, 48
+  offset: 0, 0
+  index: -1
+cook
+  rotate: false
+  xy: 467, 403
+  size: 48, 96
+  orig: 48, 96
+  offset: 0, 0
+  index: -1
 left
   rotate: false
-  xy: 1857, 1817
+  xy: 1397, 1422
   size: 44, 40
   orig: 44, 40
   offset: 0, 0
   index: -1
+orangeButton
+  rotate: false
+  xy: 1961, 1871
+  size: 46, 46
+  orig: 46, 46
+  offset: 0, 0
+  index: -1
+orangeOverButton
+  rotate: false
+  xy: 1905, 1815
+  size: 46, 46
+  orig: 46, 46
+  offset: 0, 0
+  index: -1
+orangeSelectedButton
+  rotate: false
+  xy: 1857, 1811
+  size: 46, 46
+  orig: 46, 46
+  offset: 0, 0
+  index: -1
+order
+  rotate: false
+  xy: 611, 588
+  size: 64, 64
+  orig: 64, 64
+  offset: 0, 0
+  index: -1
 right
   rotate: false
-  xy: 1084, 1165
+  xy: 1205, 1291
   size: 44, 40
   orig: 44, 40
+  offset: 0, 0
+  index: -1
+selectedClose
+  rotate: false
+  xy: 1905, 1863
+  size: 54, 54
+  orig: 54, 54
+  offset: 0, 0
+  index: -1
+selectedCook
+  rotate: false
+  xy: 975, 990
+  size: 48, 96
+  orig: 48, 96
   offset: 0, 0
   index: -1
 selectedLeft
@@ -176,6 +239,13 @@ selectedLeft
   xy: 1155, 1287
   size: 48, 44
   orig: 48, 44
+  offset: 0, 0
+  index: -1
+selectedOrder
+  rotate: false
+  xy: 1497, 1494
+  size: 66, 66
+  orig: 66, 66
   offset: 0, 0
   index: -1
 selectedRight
@@ -187,28 +257,42 @@ selectedRight
   index: -1
 selectedTas
   rotate: false
-  xy: 2005, 2005
+  xy: 180, 91
   size: 42, 42
   orig: 42, 42
   offset: 0, 0
   index: -1
+selectedTrash
+  rotate: false
+  xy: 509, 592
+  size: 100, 128
+  orig: 100, 128
+  offset: 0, 0
+  index: -1
 tas
   rotate: false
-  xy: 467, 459
+  xy: 2007, 2007
   size: 40, 40
   orig: 40, 40
   offset: 0, 0
   index: -1
+trash
+  rotate: false
+  xy: 1905, 1919
+  size: 100, 128
+  orig: 100, 128
+  offset: 0, 0
+  index: -1
 Garbage_Can
   rotate: false
-  xy: 1397, 1494
+  xy: 509, 524
   size: 66, 66
   orig: 66, 66
   offset: 0, 0
   index: -1
 Garbage_Can_selected
   rotate: false
-  xy: 1016, 1139
+  xy: 611, 654
   size: 66, 66
   orig: 66, 66
   offset: 0, 0
@@ -223,7 +307,7 @@ button
   index: -1
 crossbutton
   rotate: false
-  xy: 509, 610
+  xy: 1016, 1095
   size: 48, 48
   split: 5, 5, 5, 5
   orig: 48, 48
@@ -231,7 +315,7 @@ crossbutton
   index: -1
 darkinventorybutton
   rotate: false
-  xy: 1465, 1509
+  xy: 1095, 1154
   size: 48, 51
   split: 23, 22, 27, 22
   pad: 13, 13, 16, 7
@@ -240,7 +324,7 @@ darkinventorybutton
   index: -1
 inventorybutton
   rotate: false
-  xy: 1397, 1441
+  xy: 1349, 1369
   size: 48, 51
   split: 22, 23, 24, 24
   pad: 13, 13, 16, 7
@@ -249,7 +333,7 @@ inventorybutton
   index: -1
 inventoryscrollpane
   rotate: false
-  xy: 1205, 1315
+  xy: 679, 654
   size: 32, 16
   split: 9, 10, 6, 8
   pad: 2, 2, 2, 2
@@ -258,39 +342,25 @@ inventoryscrollpane
   index: -1
 inventorywindow
   rotate: false
-  xy: 509, 660
+  xy: 1016, 1145
   size: 77, 60
   split: 32, 33, 25, 29
   pad: 16, 16, 9, 17
   orig: 77, 60
   offset: 0, 0
   index: -1
-orderButton
-  rotate: false
-  xy: 51, 1
-  size: 48, 49
-  orig: 48, 49
-  offset: 0, 0
-  index: -1
 pressedinventorybutton
   rotate: false
-  xy: 1016, 1089
+  xy: 51, 2
   size: 48, 48
   split: 24, 21, 23, 21
   pad: 13, 13, 16, 7
   orig: 48, 48
   offset: 0, 0
   index: -1
-selectedOrderButton
-  rotate: false
-  xy: 1905, 1898
-  size: 50, 51
-  orig: 50, 51
-  offset: 0, 0
-  index: -1
 selectedbutton
   rotate: false
-  xy: 588, 672
+  xy: 679, 672
   size: 48, 48
   split: 5, 5, 5, 5
   orig: 48, 48
@@ -379,7 +449,7 @@ skinyButton
   index: -1
 textFeildCurser
   rotate: false
-  xy: 225, 277
+  xy: 733, 864
   size: 4, 32
   orig: 4, 32
   offset: 0, 0
