@@ -104,14 +104,15 @@ public class MiniGameWindow extends Window {
             }
         });
 
-        TextButton exitButton = new TextButton("exit", skin);
-        exitButton.setPosition(560, 60);
+        ImageButton exitButton = new ImageButton(skin, "Close");
+        exitButton.setPosition(getWidth() - exitButton.getWidth(), getHeight() - exitButton.getHeight());
         exitButton.addListener(new ClickListener() {
             @Override
             public void clicked(InputEvent event, float x, float y) {
                 GameScreenController.setIsMiniGameVisible(false);
             }
         });
+
         buttonsGroup.addActor(exitButton);
 
         Label statusLabel = new Label("Perfect: true, Time: 0.0", skin, "WhiteText");

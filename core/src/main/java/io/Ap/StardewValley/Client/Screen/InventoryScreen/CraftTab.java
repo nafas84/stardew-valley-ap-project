@@ -46,7 +46,7 @@ public class CraftTab extends Window {
 
         Table rightPart = new Table();
 
-        ImageButton cookButton = new ImageButton(skin, "trash");
+        ImageButton cookButton = new ImageButton(skin, "Cook");
         cookButton.setTransform(true);
         cookButton.scaleBy(0.4f);
         cookButton.addListener(new ClickListener() {

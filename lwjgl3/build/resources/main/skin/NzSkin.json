@@ -122,17 +122,45 @@
 		"pressedOffsetX": -1,
 		"pressedOffsetY": -2
 	},
-	"trash": {
+	"Close": {
+		"imageUp": "close",
+		"imageDown": "selectedClose",
+		"imageOver": "selectedClose",
+		"pressedOffsetX": -2,
+		"pressedOffsetY": -2
+	},
+	"Order": {
+		"imageUp": "order",
+		"imageDown": "selectedOrder",
+		"imageOver": "selectedOrder",
+		"pressedOffsetX": -2,
+		"pressedOffsetY": -2
+	},
+	"Trash": {
 		"imageUp": "Garbage_Can_selected",
 		"imageDown": "Garbage_Can",
 		"imageOver": "Garbage_Can",
 		"pressedOffsetX": -2,
 		"pressedOffsetY": -2
 	},
-	"order": {
-		"imageUp": "orderButton",
-		"imageDown": "selectedOrderButton",
-		"imageOver": "selectedOrderButton",
+	"Trash2": {
+		"imageUp": "trash",
+		"imageDown": "selectedTrash",
+		"imageOver": "selectedTrash",
+		"pressedOffsetX": -2,
+		"pressedOffsetY": -2
+	},
+	"Cook": {
+		"imageUp": "cook",
+		"imageDown": "selectedCook",
+		"imageOver": "selectedCook",
+		"pressedOffsetX": -2,
+		"pressedOffsetY": -2
+	},
+	"Button": {
+		"imageUp": "orangeOverButton",
+		"imageDown": "orangeButton",
+		"imageOver": "orangeSelectedButton",
 		"pressedOffsetX": -2,
 		"pressedOffsetY": -2
 	}
@@ -302,11 +330,8 @@
 	},
 	"MiniGame": {
 		"background": "miniGame3",
-		"titleFont": "Bold"
-	},
-	"TabWindow": {
-		"background": "inventorywindow",
-		"titleFont": "Bold"
+		"titleFont": "Bold",
+		"stageBackground": "back1"
 	}
 }
 }

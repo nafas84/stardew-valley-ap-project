@@ -55,7 +55,7 @@ public class RefrigeratorTab extends Window {
 
         Table centerPart = new Table();
 
-        ImageButton trashButton = new ImageButton(skin, "trash");
+        ImageButton trashButton = new ImageButton(skin, "Trash2");
         trashButton.setTransform(true);
         trashButton.scaleBy(0.4f);
         trashButton.addListener(new ClickListener() {

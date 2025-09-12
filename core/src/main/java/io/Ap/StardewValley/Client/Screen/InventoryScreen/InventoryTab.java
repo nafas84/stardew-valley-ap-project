@@ -79,7 +79,7 @@ public class InventoryTab extends Window {
 
 
         Table centerPart = new Table();
-        ImageButton orderButton = new ImageButton(skin, "order");
+        ImageButton orderButton = new ImageButton(skin, "Order");
         orderButton.setTransform(true);
         orderButton.scaleBy(0.4f);
         orderButton.addListener(new ClickListener() {
@@ -91,7 +91,7 @@ public class InventoryTab extends Window {
         centerPart.add(orderButton).size(100, 100).left().pad(30, 0, 0, 30);
         centerPart.row();
 
-        ImageButton trashButton = new ImageButton(skin, "trash");
+        ImageButton trashButton = new ImageButton(skin, "Trash2");
         trashButton.setTransform(true);
         trashButton.scaleBy(0.4f);
         trashButton.addListener(new ClickListener() {
