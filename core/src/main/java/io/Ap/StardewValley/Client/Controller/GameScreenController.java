@@ -323,7 +323,7 @@ public class GameScreenController {
             newX -= speed;
             isMoving = true;
             player.setDirection(DirectionType.Left);
-        } else if (Gdx.input.isButtonJustPressed(App.getKeyManager().getLeftClick())){
+        } else if (Gdx.input.isButtonJustPressed(App.getKeyManager().getTools())){
             try {
                 if (isShopBesideMe(BuildingType.Blacksmith) && visibleShop != ShopType.Blacksmith) {
                     visibleShop = ShopType.Blacksmith;

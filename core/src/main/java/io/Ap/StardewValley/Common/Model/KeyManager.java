@@ -22,6 +22,7 @@ public class KeyManager {
 
     // multiplayer:
     private int scoreboard = Input.Keys.M;
+
     //inventory:
     private int openInventory = Input.Keys.I;
 
@@ -29,7 +30,7 @@ public class KeyManager {
     private int openRefrigerator = Input.Keys.C;
 
     //tools
-    private int leftClick = Input.Buttons.LEFT;
+    private int tools = Input.Buttons.LEFT;
 
     //shipping bin
     private int openShippingBin = Input.Keys.B;
@@ -108,12 +109,12 @@ public class KeyManager {
         this.openRefrigerator = openRefrigerator;
     }
 
-    public int getLeftClick() {
-        return leftClick;
+    public int getTools() {
+        return tools;
     }
 
-    public void setLeftClick(int leftClick) {
-        this.leftClick = leftClick;
+    public void setTools(int tools) {
+        this.tools = tools;
     }
 
     public int getNafisehCheat() {

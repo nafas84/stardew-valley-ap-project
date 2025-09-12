@@ -16,6 +16,7 @@ import io.Ap.StardewValley.Client.Controller.GameMenuController;
 import io.Ap.StardewValley.Client.Controller.GameScreenController;
 import io.Ap.StardewValley.Client.Screen.MultiplayerScreen.ScoreboardWindow;
 import io.Ap.StardewValley.Common.Model.App;
+import io.Ap.StardewValley.Common.Model.KeyManager;
 import io.Ap.StardewValley.Common.Model.Map.Coordinate;
 import io.Ap.StardewValley.Common.Model.Player.Player;
 import io.Ap.StardewValley.Common.Model.Result;
@@ -78,7 +79,6 @@ public class GameScreen implements Screen, InputProcessor {
 
     private boolean paused = false;
     private final GameScreenController controller = new GameScreenController();
-
 
     //inventory:
     private InventoryStage inventoryStage;
@@ -351,7 +351,6 @@ public class GameScreen implements Screen, InputProcessor {
                             break;
                         case "save":
                             GameMenuController.exitGame();
-                            //dispose();
                             StardewValley.getGame().setScreen(new MainMenuScreen());
                             break;
                         case "exit":
@@ -363,12 +362,12 @@ public class GameScreen implements Screen, InputProcessor {
             }
         };
 
+        Table table = getTableDialog();
+        pauseDialog.getContentTable().add(table).expand().padLeft(50).padRight(50).center().row();
+
+
         Table buttonTable = pauseDialog.getButtonTable();
-        buttonTable.defaults().pad(0);
-
-        buttonTable.pad(100);
-
-        buttonTable.defaults().space(10);
+        buttonTable.defaults().space(10).padTop(25);
 
         pauseDialog.button("Resume", "resume").row();
         pauseDialog.button("Save", "save").row();
@@ -377,6 +376,68 @@ public class GameScreen implements Screen, InputProcessor {
         pauseDialog.setMovable(false);
         pauseDialog.setModal(true);
         pauseDialog.show(stage);
+    }
+
+    private Table getTableDialog() {
+        final Label moveUp, moveDown, moveLeft, moveRight;
+        final Label pauseGame, aynazCheat, nafisehCheat, animalList, miniGame, scoreBoard, inventory, refrigerator, shippingBin;
+        final Label moveUpButton, moveDownButton, moveLeftButton, moveRightButton;
+        final Label pauseGameButton, aynazCheatButton, nafisehCheatButton, animalListButton, miniGameButton, scoreBoardButton, inventoryButton, refrigeratorButton, shippingBinButton;
+
+        Skin skin = StardewValley.getSkin();
+
+        moveUp       = new Label("Up", skin, "Bold");
+        moveDown     = new Label("Down", skin, "Bold");
+        moveLeft     = new Label("Left", skin, "Bold");
+        moveRight    = new Label("Right", skin, "Bold");
+
+        pauseGame    = new Label("Pause", skin, "Bold");
+        aynazCheat   = new Label("Aynaz Cheat", skin, "Bold");
+        nafisehCheat = new Label("Nafiseh Cheat", skin, "Bold");
+        //animalList   = new Label("Animal List", skin, "Bold");
+        miniGame     = new Label("Mini Game", skin, "Bold");
+        scoreBoard   = new Label("Scoreboard", skin, "Bold");
+        inventory    = new Label("Inventory", skin, "Bold");
+        refrigerator = new Label("Refrigerator", skin, "Bold");
+        shippingBin  = new Label("Shipping Bin", skin, "Bold");
+
+        moveUpButton       = new Label(Input.Keys.toString(App.getKeyManager().getMoveUp()), skin);
+        moveDownButton     = new Label(Input.Keys.toString(App.getKeyManager().getMoveDown()), skin);
+        moveLeftButton     = new Label(Input.Keys.toString(App.getKeyManager().getMoveLeft()), skin);
+        moveRightButton    = new Label(Input.Keys.toString(App.getKeyManager().getMoveRight()), skin);
+
+        pauseGameButton    = new Label(Input.Keys.toString(App.getKeyManager().getPauseGame()), skin);
+        aynazCheatButton   = new Label(Input.Keys.toString(App.getKeyManager().getAynazCheat()), skin);
+        nafisehCheatButton = new Label(Input.Keys.toString(App.getKeyManager().getNafisehCheat()), skin);
+        //animalListButton   = new Label(Input.Keys.toString(App.getKeyManager().getAnimalList()), skin);
+        miniGameButton     = new Label(Input.Keys.toString(App.getKeyManager().getMiniGame()), skin);
+        scoreBoardButton   = new Label(Input.Keys.toString(App.getKeyManager().getScoreboard()), skin);
+        inventoryButton    = new Label(Input.Keys.toString(App.getKeyManager().getOpenInventory()), skin);
+        refrigeratorButton = new Label(Input.Keys.toString(App.getKeyManager().getOpenRefrigerator()), skin);
+        shippingBinButton  = new Label(Input.Keys.toString(App.getKeyManager().getOpenShippingBin()), skin);
+
+        Table table = new Table();
+
+        table.add(moveUp);       table.add(moveUpButton).width(300).pad(10);
+        table.add(pauseGame);    table.add(pauseGameButton).width(300).pad(10).row();
+
+        table.add(moveDown);     table.add(moveDownButton).width(300).pad(10);
+        table.add(inventory);    table.add(inventoryButton).width(300).pad(10).row();
+
+        table.add(moveLeft);     table.add(moveLeftButton).width(300).pad(10);
+        table.add(refrigerator); table.add(refrigeratorButton).width(300).pad(10).row();
+
+        table.add(moveRight);    table.add(moveRightButton).width(300).pad(10);
+        table.add(shippingBin);  table.add(shippingBinButton).width(300).pad(10).row();
+
+        table.add(aynazCheat);   table.add(aynazCheatButton).width(300).pad(10);
+        table.add(miniGame); table.add(miniGameButton).width(300).pad(10).row();
+
+        //table.add(animalList);   table.add(animalListButton).width(300).pad(10);
+        table.add(nafisehCheat);     table.add(nafisehCheatButton).width(300).pad(10);
+        table.add(scoreBoard);   table.add(scoreBoardButton).width(300).pad(10).row();
+
+        return table;
     }
 
 

@@ -89,7 +89,8 @@ public class MiniGameWindow extends Window {
 
         TextureRegion unknownImage = ItemTextureBank.getTexture("unknown");
         Image myImage = new Image(unknownImage);
-        myImage.setPosition(370 + myCheckBox.getWidth() + 5, 500);
+        myImage.setSize(myImage.getWidth() * 3.3f, myImage.getHeight() * 3.3f);
+        myImage.setPosition(370 + myCheckBox.getWidth() + 16, 500);
         buttonsGroup.addActor(myImage);
 
         myCheckBox.addListener(new ClickListener() {
