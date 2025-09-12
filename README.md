@@ -21,12 +21,15 @@ To play the text-based version of the game, run the **console launcher** in your
 ConsoleLauncher.main(); // Run this to start the console game
 ```
 
+![console_map](assets/screenshots/StardewValley.png)
+
 ### Graphical Version
 To play the graphical version of the game, run the LWJGL3 launcher in your IDE:
 
 ```java
 Lwjgl3Launcher.main(); // Run this to start the graphical game
 ```
+![sherekVane](assets/screenshots/StardewValleyCollage.png)
 
 
 ## Team Members
