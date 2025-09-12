@@ -24,18 +24,11 @@ public class StardewValley extends Game {
 
         // setCursor
         setCustomCursor();
-
-        //Graphics.DisplayMode displayMode = Gdx.graphics.getDisplayMode();
-        //Gdx.graphics.setFullscreenMode(displayMode);
-
-        // loadApp(stayLoggedIn)
         try {
             App.loadAppScreen();
         } catch (FileNotFoundException e) {
             throw new RuntimeException(e);
         }
-
-        //getGame().setScreen(new TiledMapRenderHelper());
     }
 
     @Override
