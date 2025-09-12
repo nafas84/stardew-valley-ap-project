@@ -1,5 +1,6 @@
 package io.Ap.StardewValley.Client.Screen.InventoryScreen;
 
+import com.badlogic.gdx.graphics.g2d.TextureRegion;
 import com.badlogic.gdx.scenes.scene2d.ui.*;
 import com.badlogic.gdx.scenes.scene2d.*;
 import com.badlogic.gdx.scenes.scene2d.utils.*;
@@ -11,6 +12,7 @@ import io.Ap.StardewValley.Client.Controller.SirkBozorg.PlayerController;
 import io.Ap.StardewValley.Common.Model.App;
 import io.Ap.StardewValley.Common.Model.Item.Item;
 import io.Ap.StardewValley.Client.Screen.ItemScreen.ItemTextureBank;
+import io.Ap.StardewValley.Common.Model.Player.Player;
 
 import java.util.ArrayList;
 import java.util.HashMap;
@@ -25,9 +27,34 @@ public class InventoryTab extends Window {
     private Table leftPart;
     private ScrollPane scrollPane;
     private Map<ImageTextButton, String> buttonToItemName = new HashMap<>();
-
     private Label label1;
     private Label label2;
+
+    private Image bodyImage, handImage, pantImage, hairImage, shirtImage;
+
+    {
+        // player image:
+        int pantIndex = App.getGame().getCurrentPlayer().getPantIndex();
+        int shirtIndex = App.getGame().getCurrentPlayer().getShirtIndex();
+        int hairIndex = App.getGame().getCurrentPlayer().getHairIndex();
+
+        Texture bodySheetTexture = new Texture("player/body_boy.png");
+        TextureRegion bodyRegion = new TextureRegion(bodySheetTexture, 0, 0, 16, 32);
+        Texture handSheetTexture = new Texture("player/hand_01.png");
+        TextureRegion handRegion = new TextureRegion(handSheetTexture, 0, 0, 16, 32);
+
+        bodyImage = new Image(bodyRegion);
+        handImage = new Image(handRegion);
+
+        TextureRegion[][] shirtSheet = TextureRegion.split(new Texture("player/clothes/shirts.png"), 8, 8);
+        TextureRegion[][] hairSheet = TextureRegion.split(new Texture("player/clothes/hairstyles.png"), 16, 32);
+        TextureRegion[][] pantSheet = TextureRegion.split(new Texture("player/pants/pant_" + pantIndex + ".png"), 16, 32);
+
+
+        pantImage = new Image(pantSheet[0][0]);
+        shirtImage = new Image(shirtSheet[(shirtIndex / 18) * 4][shirtIndex % 16]);
+        hairImage = new Image(hairSheet[(hairIndex / 8) * 3][hairIndex % 8]);
+    }
 
     public InventoryTab(Skin skin) {
         super("", skin);
@@ -82,9 +109,21 @@ public class InventoryTab extends Window {
         Table rightPart = new Table();
         rightPart.top();
 
-        Image topImage = new Image(new Texture("etc/menu/daybg.png"));
-        topImage.setScaling(Scaling.fit);
-        rightPart.add(topImage).width(200).height(350).center().row();
+        Image characterBackground = new Image(new Texture("etc/menu/daybg.png"));
+        characterBackground.setScaling(Scaling.fit);
+        Group characterGroup = getCharacterGroup();
+
+        Stack characterStack = new Stack();
+        characterStack.add(characterBackground);
+        characterStack.add(characterGroup);
+
+
+        rightPart.add(characterStack).size(
+                characterBackground.getWidth() * 1.7f,
+                characterBackground.getHeight() * 1.7f
+        ).padBottom(30);
+
+        rightPart.row();
 
         rightPart.add(label1).center().padTop(10).row();
         rightPart.add(label2).center().padTop(5).row();
@@ -150,12 +189,49 @@ public class InventoryTab extends Window {
             if ((i + 1) % columns == 0) leftPart.row();
         }
 
-        scrollPane.setWidget(leftPart);  // اطمینان از بروزرسانی محتوا
+        scrollPane.setWidget(leftPart);
 
         label2.setText("count: " + App.getGame().getCurrentPlayer().getCount());
     }
 
     private String getSelectedItemName () {
         return buttonToItemName.get(selectedButton);
+    }
+
+    private Group getCharacterGroup() {
+        Group characterGroup = new Group();
+        Player player = App.getGame().getCurrentPlayer();
+
+        float scale = 8f;
+
+        int x = 45;
+        int y = 49;
+
+        bodyImage.setSize(16 * scale, 32 * scale);
+        bodyImage.setPosition(x, y);
+        characterGroup.addActor(bodyImage);
+
+        // selected:
+        pantImage.setSize(16 * scale, 32 * scale);
+        pantImage.setPosition(x, y);
+        pantImage.setColor(App.getColor(player.getPantColor()));
+        characterGroup.addActor(pantImage);
+
+        shirtImage.setSize(8 * scale, 8 * scale);
+        shirtImage.setPosition(x + 4 * scale, y + 9 * scale);
+        characterGroup.addActor(shirtImage);
+
+        int longHair = (player.getHairIndex() < 16) ? 0 : -1;
+        hairImage.setSize(16 * scale, 32 * scale);
+        hairImage.setPosition(x, y - (1 + longHair) * scale);
+        hairImage.setColor(App.getColor(player.getHairColor()));
+        characterGroup.addActor(hairImage);
+
+        // hand
+        handImage.setSize(16 * scale, 32 * scale);
+        handImage.setPosition(x, y);
+        characterGroup.addActor(handImage);
+
+        return characterGroup;
     }
 }

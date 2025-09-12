@@ -9,19 +9,19 @@ import io.Ap.StardewValley.Common.Model.Animals.FishType;
 import io.Ap.StardewValley.Common.Model.Cooking.FoodType;
 import io.Ap.StardewValley.Common.Model.Cooking.IngredientType;
 import io.Ap.StardewValley.Common.Model.Crafting.CraftType;
-import io.Ap.StardewValley.Common.Model.Plants.ForagingCropType;
-import io.Ap.StardewValley.Common.Model.Plants.ForagingMineralType;
-import io.Ap.StardewValley.Common.Model.Plants.SaplingType;
-import io.Ap.StardewValley.Common.Model.Plants.SeedType;
+import io.Ap.StardewValley.Common.Model.Plants.*;
 import io.Ap.StardewValley.Common.Model.Player.GiftType;
 
 import java.util.HashMap;
 import java.util.Map;
 
 public class ItemTextureBank {
-    private final static Map<String, Texture> itemTextures = new HashMap<>();
+    private final static Map<String, Texture> inventoryButtons = new HashMap<>();
 
     private final static Map<String, TextureRegion> items = new HashMap<>();
+
+    private final static Map<String, TextureRegion> tools = new HashMap<>();
+
 
     static {
         // foraging crops:
@@ -38,7 +38,7 @@ public class ItemTextureBank {
 
                 if (row >= rows) break;
 
-                items.put(type.getName(), foragingSheet[row][col]);
+                items.put(type.getName().toLowerCase(), foragingSheet[row][col]);
                 index++;
             }
         }
@@ -56,7 +56,7 @@ public class ItemTextureBank {
 
                 if (row >= rows) break;
 
-                items.put(type.getName(), foragingSheet[row][col]);
+                items.put(type.getName().toLowerCase(), foragingSheet[row][col]);
                 index++;
             }
         }
@@ -74,7 +74,7 @@ public class ItemTextureBank {
 
                 if (row >= rows) break;
 
-                items.put(type.getName(), craftSheet[row][col]);
+                items.put(type.getName().toLowerCase(), craftSheet[row][col]);
                 index++;
             }
         }
@@ -92,7 +92,7 @@ public class ItemTextureBank {
 
                 if (row >= rows) break;
 
-                items.put(type.getName(), animalProductsSheet[row][col]);
+                items.put(type.getName().toLowerCase(), animalProductsSheet[row][col]);
                 index++;
             }
         }
@@ -110,7 +110,7 @@ public class ItemTextureBank {
 
                 if (row >= rows) break;
 
-                items.put(type.getName(), sheet[row][col]);
+                items.put(type.getName().toLowerCase(), sheet[row][col]);
                 index++;
             }
         }
@@ -128,7 +128,7 @@ public class ItemTextureBank {
 
                 if (row >= rows) break;
 
-                items.put(type.getName(), sheet[row][col]);
+                items.put(type.getName().toLowerCase(), sheet[row][col]);
                 index++;
             }
         }
@@ -146,7 +146,7 @@ public class ItemTextureBank {
 
                 if (row >= rows) break;
 
-                items.put(type.getName(), sheet[row][col]);
+                items.put(type.getName().toLowerCase(), sheet[row][col]);
                 index++;
             }
         }
@@ -164,7 +164,7 @@ public class ItemTextureBank {
 
                 if (col >= cols) break;
 
-                items.put(type.getName(), sheet[row][col]);
+                items.put(type.getName().toLowerCase(), sheet[row][col]);
                 index++;
             }
         }
@@ -182,7 +182,7 @@ public class ItemTextureBank {
 
                 if (col >= cols) break;
 
-                items.put(type.getName(), sheet[row][col]);
+                items.put(type.getName().toLowerCase(), sheet[row][col]);
                 index++;
             }
         }
@@ -200,7 +200,43 @@ public class ItemTextureBank {
 
                 if (row >= rows) break;
 
-                items.put(type.getName(), sheet[row][col]);
+                items.put(type.getName().toLowerCase(), sheet[row][col]);
+                index++;
+            }
+        }
+        // crops:
+        {
+            TextureRegion[][] sheet = TextureRegion.split(new Texture("items/Crops.png"), 16, 16);
+
+            int rows = sheet.length;
+            int cols = sheet[0].length;
+
+            int index = 0;
+            for (CropType type : CropType.values()) {
+                int col = index / rows;
+                int row = index % rows;
+
+                if (col >= cols) break;
+
+                items.put(type.getName().toLowerCase(), sheet[row][col]);
+                index++;
+            }
+        }
+        // fruits:
+        {
+            TextureRegion[][] sheet = TextureRegion.split(new Texture("items/Fruits.png"), 16, 16);
+
+            int rows = sheet.length;
+            int cols = sheet[0].length;
+
+            int index = 0;
+            for (FruitType type : FruitType.values()) {
+                int col = index / rows;
+                int row = index % rows;
+
+                if (col >= cols) break;
+
+                items.put(type.getName().toLowerCase(), sheet[row][col]);
                 index++;
             }
         }
@@ -219,25 +255,38 @@ public class ItemTextureBank {
             if (!file.isDirectory() && file.extension().equals("png")) {
                 String itemName = file.nameWithoutExtension();
                 Texture texture = new Texture(file);
-                itemTextures.put(itemName, texture);
+                inventoryButtons.put(itemName, texture);
+            }
+        }
+    }
+
+    static {
+        FileHandle dir = Gdx.files.internal("assets/tools");
+        for (FileHandle file : dir.list()) {
+            if (!file.isDirectory() && file.extension().equals("png")) {
+                String itemName = file.nameWithoutExtension();
+                Texture texture = new Texture(file);
+                inventoryButtons.put(itemName, texture);
             }
         }
     }
 
     public static TextureRegion getTexture (String itemName) {
-        if (items.get(itemName) != null) {
-            return items.get(itemName);
-        } else if (itemTextures.get(itemName.toLowerCase()) != null) {
-            return new TextureRegion(itemTextures.get(itemName.toLowerCase()));
+        if (items.get(itemName.toLowerCase()) != null) {
+            return items.get(itemName.toLowerCase());
+        } else if (tools.get(itemName) != null) {
+            return new TextureRegion(tools.get(itemName.toLowerCase()));
+        } else if (inventoryButtons.get(itemName.toLowerCase()) != null) {
+            return new TextureRegion(inventoryButtons.get(itemName.toLowerCase()));
         }
 
-        return new TextureRegion(itemTextures.get("unknown"));
+        return new TextureRegion(inventoryButtons.get("unknown"));
     }
 
     public static void dispose() {
-        for (Texture texture : itemTextures.values()) {
+        for (Texture texture : inventoryButtons.values()) {
             texture.dispose();
         }
-        itemTextures.clear();
+        inventoryButtons.clear();
     }
 }

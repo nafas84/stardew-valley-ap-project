@@ -1,7 +1,6 @@
 package io.Ap.StardewValley.Client.Controller;
 
 import com.badlogic.gdx.Gdx;
-import io.Ap.StardewValley.Client.Controller.NetworkControllers.UpdateController;
 import io.Ap.StardewValley.Client.Controller.SirkBozorg.*;
 import io.Ap.StardewValley.Common.Model.Plants.*;
 import io.Ap.StardewValley.Common.Model.Animals.AnimalProduct;
@@ -96,7 +95,7 @@ public class GameScreenController {
 
     public void goToNextDay() {
         view.setPaused(true);
-        view.showNightOverlay(() -> {
+        view.showGoodNightOverLayer(() -> {
             Season oldSeason = App.getGame().getCurrentTime().getSeason();
             NightController.nightControl();
             Season newSeason = App.getGame().getCurrentTime().getSeason();
@@ -183,16 +182,9 @@ public class GameScreenController {
             App.getGame().getCurrentPlayer().getInventory().addItem(new Fruit(FruitType.Apricot));
             App.getGame().getCurrentPlayer().getInventory().addItem(new ForagingMineral(ForagingMineralType.Coal), 100);
             App.getGame().getCurrentPlayer().getInventory().addItem(new ForagingMineral(ForagingMineralType.Copper), 100);
-            App.getGame().getCurrentPlayer().getInventory().addItem(new Stone(), 1000);
-            App.getGame().getCurrentPlayer().getInventory().addItem(new Wood(), 1000);
+            App.getGame().getCurrentPlayer().getInventory().addItem(new Stone(), 100);
+            App.getGame().getCurrentPlayer().getInventory().addItem(new Wood(), 100);
             App.getGame().getCurrentPlayer().getInventory().addItem(new Sapling(SaplingType.ApricotSapling));
-            inventoryStageNeedsUpdate = true;
-            cookingStageNeedsUpdate = true;
-            if (visibleShop == null) {
-                visibleShop = ShopType.CarpentersShop;
-            } else {
-                visibleShop = null;
-            }
             App.getGame().getCurrentPlayer().addCount(1000);
 
         }
@@ -331,7 +323,7 @@ public class GameScreenController {
             newX -= speed;
             isMoving = true;
             player.setDirection(DirectionType.Left);
-        } else if (Gdx.input.isButtonJustPressed(App.getKeyManager().getLeftClick())){
+        } else if (Gdx.input.isButtonJustPressed(App.getKeyManager().getTools())){
             try {
                 if (isShopBesideMe(BuildingType.Blacksmith) && visibleShop != ShopType.Blacksmith) {
                     visibleShop = ShopType.Blacksmith;

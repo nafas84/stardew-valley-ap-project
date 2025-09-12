@@ -1,5 +1,8 @@
 
+import com.badlogic.gdx.graphics.Texture;
+import com.badlogic.gdx.graphics.g2d.TextureRegion;
 import io.Ap.StardewValley.Client.View.AppView;
+import io.Ap.StardewValley.Common.Model.Cooking.FoodType;
 
 import java.io.IOException;
 import java.sql.Connection;
@@ -9,7 +12,6 @@ import java.sql.Statement;
 
 public class ConsoleLauncher {
     public static void main(String[] args) throws IOException {
-        //initDatabase();
         (new AppView()).run();
     }
 

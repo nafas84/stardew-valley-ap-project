@@ -10,6 +10,8 @@ import com.badlogic.gdx.scenes.scene2d.ui.*;
 import com.badlogic.gdx.scenes.scene2d.utils.ClickListener;
 import com.badlogic.gdx.scenes.scene2d.utils.TextureRegionDrawable;
 import com.badlogic.gdx.utils.viewport.ScreenViewport;
+import io.Ap.StardewValley.Client.Screen.PlayerScreen.PlayerRender;
+import io.Ap.StardewValley.Common.Model.App;
 import io.Ap.StardewValley.StardewValley;
 
 import java.util.ArrayList;
@@ -41,7 +43,7 @@ public class InventoryStage extends Stage {
             );
             Texture texture = new Texture(Gdx.files.internal("inventory/inventory button " + i + ".png"));
             TextureRegionDrawable icon = new TextureRegionDrawable(new TextureRegion(texture));
-            style.imageUp = icon;
+            style.imageUp = (i == 1) ? PlayerRender.getHeadImage().getDrawable() : icon;
 
             final ImageTextButton btn = new ImageTextButton("", style);
 
