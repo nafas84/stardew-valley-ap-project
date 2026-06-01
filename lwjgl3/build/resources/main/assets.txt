@@ -223,6 +223,16 @@ player/pants/pant_7.png
 player/pants/pant_8.png
 player/pants/pant_9.png
 player/tools/tools.png
+screenshots/StardewValley.png
+screenshots/StardewValley1.png
+screenshots/StardewValley2.png
+screenshots/StardewValley3.png
+screenshots/StardewValley4.png
+screenshots/StardewValley5.png
+screenshots/StardewValley6.png
+screenshots/StardewValley7.png
+screenshots/StardewValley8.png
+screenshots/StardewValleyCollage.png
 shop/Clint.png
 shop/Gus.png
 shop/Marnie.png
